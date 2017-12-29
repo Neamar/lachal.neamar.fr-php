@@ -1,0 +1,135 @@
+body
+{
+	counter-reset: numero section;
+}
+
+#Main dt
+{
+	padding:5px;
+	font-weight:bold;
+	line-height:20px;
+	margin-bottom:-1px;
+	text-transform:capitalize;
+	border:1px solid black;
+}
+#Main dt:before
+{
+	counter-increment: numero;                   /* Incrémente le compteur de section */
+	content:counter(numero) " |  ";   /* Affiche le compteur */
+	color:gray;
+}
+
+#Main .AloneDefinition
+{
+	background:transparent url("Pics/Icones/Definition_light.png") no-repeat scroll right bottom
+}
+
+#Main .AloneDefinition > h2 + p
+{
+	font-size:130%;
+}
+
+#Main dd
+{
+	padding:5px;
+	text-indent:25px;
+	border:1px solid black;
+	margin-bottom:25px;
+}
+#Main dd:first-letter, dd li:first-letter
+{
+	text-transform:uppercase;
+}
+
+/* Pour les catégories */
+#Main dt em
+{
+	color:gray;
+	text-align:right;
+	display:block;
+}
+
+#Main fieldset
+{
+	background-color:white;
+	border:1px solid black;
+	padding-bottom:15px;
+}
+
+#Main legend
+{
+	font-size:1.3em;
+	background-color:white;
+	padding:5px;
+	font-weight:bold;
+	border:1px solid black;
+	border-bottom:none;
+}
+
+/* Pour la liste des expressions */
+.Liste
+{
+	margin-top:25px;
+	margin-bottom:25px;
+/* 	background:transparent url("Pics/Icones/Rubrique_light.png") no-repeat scroll right bottom; */
+}
+
+.Liste legend
+{
+		text-transform:uppercase;
+		font-size:1.7em;
+}
+.Liste legend:before
+{
+	counter-increment: section;
+	content:counter(section) " |  ";
+	color:gray;
+}
+
+
+.Lettre
+{
+	margin:50px;
+	font-size:4em;
+	text-align:center;
+}
+
+.petitTexte
+{
+	color:gray;
+	font-style:italic;
+	font-size:0.7em;
+}
+
+.flottant
+{
+	float:left;
+}
+
+.Ancre
+{
+	color:rgb(0,0,75);
+	font-variant:normal;
+	text-decoration: none;
+}
+.Ancre:hover
+{
+	color:blue;
+	text-decoration: underline overline;
+}
+
+
+.Legal:before
+{
+	content:"Encyclopædia Lachalis.	Exemples par M. Lachal. Les noms de M. Lachal et des élèves cités le sont avec l'autorisation expresse de leurs propriétaires. Les définitions, fournies sans garantie, peuvent être réutilisées sans conditions.";
+/*	font-size:0.8em;
+	font-style:italic;*/
+}
+.Legal
+{
+	text-align:center;
+	margin-top:50px;
+	font-size:0.8em;
+	font-style:italic;
+}
+
