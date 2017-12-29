@@ -83,7 +83,7 @@ function Parseur(&$buffer)
 	//Puis supprimer les nolink restants.
 	$buffer=str_replace(array('<nolink>','</nolink>'),'',$buffer);
 
-	$buffer=str_replace(array('<TITRE>','<DESC>'),array($titre,$Description),$buffer);
+	$buffer=str_replace(array('<TITRE>','<DESC>'),array($titre,''),$buffer);
 	unset($titre);
 	unset($Description);
 
