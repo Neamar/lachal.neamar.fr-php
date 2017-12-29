@@ -35,7 +35,7 @@ if(!isset($description))
     tex2jax: {inlineMath: [['\\(','\\)']]}
   });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>	<link rel="icon" type="image/x-icon" href="https://neamar.fr/favicon.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 
 <body>
