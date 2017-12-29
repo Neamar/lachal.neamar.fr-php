@@ -30,7 +30,7 @@ if(!isset($description))
 	<?php if(!isset($NoDefaultDesign)) {?>
 	<link href="https://neamar.fr/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
 	<?php } ?>
-	<link href="http://neamar.fr/Menu.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="https://neamar.fr/Menu.css" rel="stylesheet" type="text/css" media="screen" />
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [['\\(','\\)']]}
