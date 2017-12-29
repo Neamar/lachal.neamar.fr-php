@@ -15,7 +15,7 @@ function Encode($Texte)
 	return $Texte;
 }
 
-include('../ConnectBDD.php');
+include('./ConnectBDD.php');
 //Protéger les données
 $message='';
 

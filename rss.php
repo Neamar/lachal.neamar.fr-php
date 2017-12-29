@@ -23,7 +23,7 @@ function Encode($Texte)
 	$Texte=strtoupper($Texte{0}) . strtolower(substr($Texte,1));
 	return $Texte;
 }
-	include('../ConnectBDD.php');
+	include('./ConnectBDD.php');
 	$donnees=mysql_query('SELECT * FROM Lachal_Citations ORDER BY ID DESC LIMIT 10') or die(mysql_error());
 	mysql_close();
 	while($current = mysql_fetch_array($donnees))
