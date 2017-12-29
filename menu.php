@@ -6,6 +6,7 @@ ini_set('memory_limit','32M');
 ini_set('default_charset', 'ISO-8859-1');
 
 
+var_dump($_SERVER);
 //Gestion du cache mémoire.
 function Cache($buffer)
 {
