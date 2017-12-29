@@ -145,4 +145,8 @@ body
 	#GoogleSearch {
 		display: none;
 	}
+
+	#menu dl {
+		width: auto;
+	}
 }
