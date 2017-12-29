@@ -10,7 +10,7 @@ include('menu.php');
 	<li>Nicolas B.</li>
 	<li>Yannish R.</li>
 	<li>Clément P.</li>
-	<li>Hébergement : <a href="http://neamar.fr">Neamar</a>.</li>
+	<li>Hébergement : <a href="https://neamar.fr">Neamar</a>.</li>
 </ul>
 <hr />
 <h2>Remerciements :</h2>

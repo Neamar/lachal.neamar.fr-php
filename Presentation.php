@@ -27,7 +27,7 @@ Certes, maintenant que le temps a passé, nous n'avons plus M. Lachal en TD de Ma
 <hr />
 
 <p style="text-align:center">
-<a href="http://neamar.fr"><img class="nonflottant" src="http://neamar.fr/Pics/NeamarStampLittle.png" alt="Une production Neamar" /></a>
+<a href="https://neamar.fr"><img class="nonflottant" src="https://neamar.fr/Pics/NeamarStampLittle.png" alt="Une production Neamar" /></a>
 </p>
 
 <hr />
