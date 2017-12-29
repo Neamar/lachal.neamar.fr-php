@@ -22,9 +22,7 @@ Certes, maintenant que le temps a passé, nous n'avons plus M. Lachal en TD de Ma
 
 <hr />
 
-<p style="text-align:center;">Vous appréciez le dictionnaire de M. Lachal ? Vous adulerez sûrement l'<a href="http://omnilogie.fr">omnilogie</a>. Chaque jour, un article de culture générale sur tout et n'importe quoi, pour se coucher moins bête le soir.<br />
-<a href="http://omnilogie.fr"><img src="http://omnilogie.fr/Last.png" alt="Dernier omnilogisme" class="centre" style="border:3px outset black;"/></a>
-</p>
+<p style="text-align:center;">Vous appréciez le dictionnaire de M. Lachal ? Vous adulerez sûrement l'<a href="https://omnilogie.fr">omnilogie</a>. Chaque jour, un article de culture générale sur tout et n'importe quoi, pour se coucher moins bête le soir.</p>
 
 <hr />
 
