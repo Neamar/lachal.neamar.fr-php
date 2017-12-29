@@ -76,7 +76,7 @@ function Parseur(&$buffer)
  	unset($Patterns);
 
 	if(isset($UseMath) && $UseMath==true)			//Parser le Latex
-		$buffer = preg_replace_callback('#\<math\>(.+)\<\/math\>#isU', 'RegexpCallback', $buffer);//RegexpCallback est défini dans le fichier inclus plus haut : include('../Latex/regexp_callback.php');
+		$buffer =  preg_replace('#\<math\>(.+)\<\/math\>#isU', '\\($1\\)',$buffer)
 
 	//Et enfin, supprimer les liens à l'intérieur des balises <nolink> :
 	//$buffer=preg_replace('#\<nolink\>(.*)\<a.+\>(.+)\<\/a\>(.*)\<\/nolink\>#iU', '$1$2$3', $buffer);//Ne fonctionne pas si plusiseurs ancres dans une balise nolink.
