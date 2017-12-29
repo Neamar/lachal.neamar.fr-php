@@ -118,16 +118,16 @@ if(!isset($description))
 	<?php
 	}
 	?>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4257957-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-4257957-11');
 </script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-4257957-1");
-pageTracker._setDomainName(".neamar.fr");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
+
 <noscript><p style="color:red; text-decoration: blink; font-weight:800;"><br /><br /><br />Afin de pouvoir profiter au maximum des sites sur neamar.fr, il est fortement recommandé d'activer JavaScript.</p></noscript>
 </div>
 
