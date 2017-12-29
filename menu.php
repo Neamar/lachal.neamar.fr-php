@@ -76,7 +76,7 @@ function Parseur(&$buffer)
  	unset($Patterns);
 
 	if(isset($UseMath) && $UseMath==true) {
-		$buffer = preg_replace('#\<math\>(.+)\<\/math\>#isU','(MATH)$1(MATH)',$buffer);
+		$buffer = preg_replace('#\<math\>(.+)\<\/math\>#isU','\\($1\\)',$buffer);
 	}
 
 	//Et enfin, supprimer les liens à l'intérieur des balises <nolink> :

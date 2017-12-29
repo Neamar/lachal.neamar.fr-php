@@ -33,7 +33,7 @@ if(!isset($description))
 	<link href="http://neamar.fr/Menu.css" rel="stylesheet" type="text/css" media="screen" />
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['(MATH)','(MATH)']]}
+    tex2jax: {inlineMath: [['\\(','\\)']]}
   });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>	<link rel="icon" type="image/x-icon" href="https://neamar.fr/favicon.ico" />
