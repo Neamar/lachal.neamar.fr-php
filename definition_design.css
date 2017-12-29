@@ -137,4 +137,8 @@ body
 	#Main {
 		margin: 10px;
 	}
+
+	img {
+		max-width: 90%;
+	}
 }
