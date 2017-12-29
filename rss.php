@@ -2,7 +2,7 @@
 <rss version="2.0">
 <channel>
 <title>Le petit Lachal non-illustre</title>
-<link>http://lachal.neamar.fr</link>
+<link>https://lachal.neamar.fr</link>
 <description>Les derniers ajouts du dictionnaire</description>
 <language>fr</language>
 <?php
@@ -28,7 +28,7 @@ function Encode($Texte)
 	mysql_close();
 	while($current = mysql_fetch_array($donnees))
 	{
-		echo '<item>' . "\n"  . '<title>' . $current['Mot'] . '</title>' . "\n" . '<author>Groupe 12</author>' . "\n" .  '<link>http://lachal.neamar.fr/' . Encode($current['Mot']) . '</link>' . "\n" . '<description>' . $current['Definition'] . '</description>' . "\n" . '</item>';
+		echo '<item>' . "\n"  . '<title>' . $current['Mot'] . '</title>' . "\n" . '<author>Groupe 12</author>' . "\n" .  '<link>https://lachal.neamar.fr/' . Encode($current['Mot']) . '</link>' . "\n" . '<description>' . $current['Definition'] . '</description>' . "\n" . '</item>';
 	}
 ?>
 </channel>

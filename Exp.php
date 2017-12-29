@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['Titre']))
 {
-	header('Location:http://lachal.neamar.fr/Hist-' . $_GET['ShowOnly']);
+	header('Location:https://lachal.neamar.fr/Hist-' . $_GET['ShowOnly']);
 	exit();
 }
 
