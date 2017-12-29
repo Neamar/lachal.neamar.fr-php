@@ -29,3 +29,11 @@ RewriteRule ^([0-9]{1,2})-(.+)$  /Exp.php?ShowOnly=$1&Titre=$2 [L]
 RewriteRule ^Hist-([0-9]{1,2})$  /Exp.php?ShowOnly=$1 [L]
 RewriteRule ^([a-zA-Z])$  /index.php?ShowOnlyLetter=$1 [L]
 RewriteRule ^([-a-zA-Z0-9&;%ϋόξοιθκτ,_]+)$  /AffiMot.php?ShowOnly=$1 [L]
+
+<FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|swf)$">
+
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=172800, public, must-revalidate"
+  </IfModule>
+
+</FilesMatch>
