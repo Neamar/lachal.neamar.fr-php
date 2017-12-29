@@ -9,12 +9,12 @@ ini_set('default_charset', 'ISO-8859-1');
 //Gestion du cache mémoire.
 function Cache($buffer)
 {
-	$Cache='Ressources/Cache/C' . substr(str_replace('/','-',$_SERVER['SCRIPT_URL']),1);
+	$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['SCRIPT_URL']),1);
 	file_put_contents($Cache,$buffer);
 	return $buffer;
 }
 
-$Cache='Ressources/Cache/C' . substr(str_replace('/','-',$_SERVER['SCRIPT_URL']),1);
+$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['SCRIPT_URL']),1);
 if(USE_CACHE && !file_exists($Cache))
 {
 	ignore_user_abort(true);//Éviter que l'utilisateur puisse interrompre la connexion, ce qui empêcherait l'enregistrement du cache.
@@ -23,7 +23,6 @@ if(USE_CACHE && !file_exists($Cache))
 elseif(USE_CACHE)
 {
 	echo file_get_contents($Cache);
-	include($_SERVER['DOCUMENT_ROOT'] . '/../lib/cron/cron.php');
 	exit();
 }
 
@@ -38,11 +37,11 @@ ob_start('Parseur');
 
 //Personnalisation du menu :
 $AddLine = '<link rel="alternate" type="application/rss+xml" title="Derniers ajouts sur le dictionnaire" href="rss.php" />
-<link rel="icon" type="image/x-icon" href="http://lachal.neamar.fr/favicon.ico" />
-<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="http://lachal.neamar.fr/favicon.ico" /><![endif]-->
-<link href="http://lachal.neamar.fr/definition_design.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="http://neamar.fr/Res/Typo/Typo.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="http://lachal.neamar.fr/JS.js"></script>';
+<link rel="icon" type="image/x-icon" href="//lachal.neamar.fr/favicon.ico" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="//lachal.neamar.fr/favicon.ico" /><![endif]-->
+<link href="//lachal.neamar.fr/definition_design.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="//neamar.fr/Res/Typo/Typo.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="//lachal.neamar.fr/JS.js"></script>';
 $menus = array ("Accueil","Dictionnaire","Rubriques");
 $NoGift = 1;
 $NoWelcomeCenter = 1;
@@ -51,16 +50,15 @@ $titreSVG=$titre;
 $titre="<TITRE>"; //Le titre sera remplacé par la tamporisation de sortie
 $description="<DESC>";
 $EnlargeGroupConcat=true;
-include('../header.php');
+include('./header.php');
 
-//echo '<p>SITE EN DÉRANGEMENT. Merci d\'excuser les éventuels bugs et temps de chargement longuets !</p>';
 $titre=$titreSVG;
 $description='';
 
-include('../Latex/regexp_callback.php');
+include('./regexp_callback.php');
 
 //Charger le Typographe
-include('../lib/Typo.php');
+include('./Typo.php');
 
 
 function LinkRemover($Texte)
@@ -90,8 +88,8 @@ function Parseur(&$buffer)
 	unset($titre);
 	unset($Description);
 
-	$buffer=str_ireplace('(cf. Histoires)','(<a class="Ancre" href="http://lachal.neamar.fr/Histoire.php">cf. Histoires</a>)',$buffer);
-	$buffer=str_ireplace('(cf. Correspondance)','(<a class="Ancre" href="http://lachal.neamar.fr/Correspondance.php">cf. Correspondance</a>)',$buffer);
+	$buffer=str_ireplace('(cf. Histoires)','(<a class="Ancre" href="//lachal.neamar.fr/Histoire.php">cf. Histoires</a>)',$buffer);
+	$buffer=str_ireplace('(cf. Correspondance)','(<a class="Ancre" href="//lachal.neamar.fr/Correspondance.php">cf. Correspondance</a>)',$buffer);
 
 	return $buffer . "\n<!--$compteur mots complexes parsés.-->";
 }
