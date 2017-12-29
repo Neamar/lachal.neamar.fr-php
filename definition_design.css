@@ -132,3 +132,9 @@ body
 	font-size:0.8em;
 	font-style:italic;
 }
+
+@media screen and (max-width: 699px) {
+	#Main {
+		margin: 10px;
+	}
+}
