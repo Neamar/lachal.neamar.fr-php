@@ -10,12 +10,12 @@ var_dump($_SERVER);
 //Gestion du cache mémoire.
 function Cache($buffer)
 {
-	$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['SCRIPT_URL']),1);
+	$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['REQUEST_URI']),1);
 	file_put_contents($Cache,$buffer);
 	return $buffer;
 }
 
-$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['SCRIPT_URL']),1);
+$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['REQUEST_URI']),1);
 if(USE_CACHE && !file_exists($Cache))
 {
 	ignore_user_abort(true);//Éviter que l'utilisateur puisse interrompre la connexion, ce qui empêcherait l'enregistrement du cache.
