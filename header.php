@@ -25,12 +25,18 @@ if(!isset($description))
 	<meta name="description" content="<?php echo $description; ?>" />
 	<meta name="copyright" content="Copyright © - Some Right Reserved - 2006-<?php echo date("Y"); ?>" />
 	<?php echo $AdditionelMetas . "\n"; ?>
-	<link rel="start" title="Accueil" href="http://neamar.fr/index.php" />
+	<link rel="start" title="Accueil" href="https://neamar.fr/index.php" />
 	<?php echo $AddLine . "\n"; ?>
 	<?php if(!isset($NoDefaultDesign)) {?>
-	<link href="http://neamar.fr/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
+	<link href="https://neamar.fr/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
 	<?php } ?>
 	<link href="http://neamar.fr/Menu.css" rel="stylesheet" type="text/css" media="screen" />
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['\\(','\\)']]}
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>	<link rel="icon" type="image/x-icon" href="https://neamar.fr/favicon.ico" />
 </head>
 
 <body>

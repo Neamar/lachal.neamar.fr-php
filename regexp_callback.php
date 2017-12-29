@@ -2,7 +2,7 @@
 
 function ParseMath($buffer)
 {//Fonction appelée à la fin de l'éxecution du script si on a demandé à utiliser les balises mathématiques.
-	return preg_replace_callback('#\<math\>(.+)\<\/math\>#isU', 'RegexpCallback',$buffer);
+	return preg_replace_callback('#\<math\>(.+)\<\/math\>#isU', '\\($1\\)',$buffer);
 }
 
 function RegexpCallback($Partie)
