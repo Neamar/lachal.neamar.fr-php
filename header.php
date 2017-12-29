@@ -59,7 +59,7 @@ if(!isset($description))
 	{
 // 		Donner le nom du menu
 		echo '	<!--Menu ' . $element . ' -->' . "\n";
-		echo '	<dl>' . "\n" . '		<dt><a href="http://neamar.fr/NoJS.php?Menu=' . $element . '" rel="nofollow" onclick="return false">' . $element . '</a></dt>' . "\n";
+		echo '	<dl id="menu-' . strtolower($element) . '">' . "\n" . '		<dt><a href="https://neamar.fr/NoJS.php?Menu=' . $element . '" rel="nofollow" onclick="return false">' . $element . '</a></dt>' . "\n";
 		echo '		<dd>' . "\n";
 // 		Faire une requete qui prend en compte les relations parents enfants
 		echo '			<ul>' . "\n";
