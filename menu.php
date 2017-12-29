@@ -75,8 +75,9 @@ function Parseur(&$buffer)
 		$buffer = preg_replace(array_keys($Patterns),array_values($Patterns),$buffer,-1,$compteur);
  	unset($Patterns);
 
-	if(isset($UseMath) && $UseMath==true)			//Parser le Latex
-		$buffer = preg_replace('#\<math\>(.+)\<\/math\>#isU', '(MATH)$1(MATH)',$buffer)
+	if(isset($UseMath) && $UseMath==true) {
+		$buffer = preg_replace('#\<math\>(.+)\<\/math\>#isU','(MATH)$1(MATH)',$buffer);
+	}
 
 	//Et enfin, supprimer les liens à l'intérieur des balises <nolink> :
 	//$buffer=preg_replace('#\<nolink\>(.*)\<a.+\>(.+)\<\/a\>(.*)\<\/nolink\>#iU', '$1$2$3', $buffer);//Ne fonctionne pas si plusiseurs ancres dans une balise nolink.
