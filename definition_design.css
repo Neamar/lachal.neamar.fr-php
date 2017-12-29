@@ -19,11 +19,6 @@ body
 	color:gray;
 }
 
-#Main .AloneDefinition
-{
-	background:transparent url("Pics/Icones/Definition_light.png") no-repeat scroll right bottom
-}
-
 #Main .AloneDefinition > h2 + p
 {
 	font-size:130%;
