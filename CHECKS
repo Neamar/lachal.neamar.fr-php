@@ -4,4 +4,4 @@ WAIT=1
 TIMEOUT=1
 ATTEMPTS=10
 
-/favicon.ico
+https://lachal.neamar.fr/favicon.ico
