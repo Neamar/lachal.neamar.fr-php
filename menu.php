@@ -55,8 +55,6 @@ include('./header.php');
 $titre=$titreSVG;
 $description='';
 
-include('./regexp_callback.php');
-
 //Charger le Typographe
 include('./Typo.php');
 
