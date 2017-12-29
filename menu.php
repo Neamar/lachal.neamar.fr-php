@@ -37,11 +37,11 @@ ob_start('Parseur');
 
 //Personnalisation du menu :
 $AddLine = '<link rel="alternate" type="application/rss+xml" title="Derniers ajouts sur le dictionnaire" href="rss.php" />
-<link rel="icon" type="image/x-icon" href="//lachal.neamar.fr/favicon.ico" />
-<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="//lachal.neamar.fr/favicon.ico" /><![endif]-->
-<link href="//lachal.neamar.fr/definition_design.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><![endif]-->
+<link href="/definition_design.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="//neamar.fr/Res/Typo/Typo.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="//lachal.neamar.fr/JS.js"></script>';
+<script type="text/javascript" src="/JS.js"></script>';
 $menus = array ("Accueil","Dictionnaire","Rubriques");
 $NoGift = 1;
 $NoWelcomeCenter = 1;

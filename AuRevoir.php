@@ -173,7 +173,7 @@ Probabilité d'atteindre le niveau <span style="text-transform:none;">a</span> av
 
 au revoir lanière d...<br /><br />
 <span style="font-size:.8em; text-transform:none;">Les auteurs : <em>Toto, <em>Titine</em>, <em>Mickey</em>, <em>Lorenzaccio</em> et... <em>Bibi</em><br />
-<a href="http://lachal.neamar.fr/">http://lachal.neamar.fr/</a></span>
+<a href="/">http://lachal.neamar.fr/</a></span>
 </p>
 </div>
 <p><a href="Ressources/au_revoir2010.pdf">Fichier PDF original</a></p>
