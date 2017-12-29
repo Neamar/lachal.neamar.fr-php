@@ -132,25 +132,3 @@ body
 	font-size:0.8em;
 	font-style:italic;
 }
-
-@media screen and (max-width: 699px) {
-	#menu-misc {
-		display: none;
-	}
-
-	#menu-accueil {
-		display: none;
-	}
-
-	#GoogleSearch {
-		display: none;
-	}
-
-	#menu dl {
-		width: auto;
-	}
-
-	body {
-		background: white;
-	}
-}

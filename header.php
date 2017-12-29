@@ -26,12 +26,10 @@ if(!isset($description))
 	<meta name="description" content="<?php echo $description; ?>" />
 	<meta name="copyright" content="Copyright © - Some Right Reserved - 2006-<?php echo date("Y"); ?>" />
 	<?php echo $AdditionelMetas . "\n"; ?>
-	<link rel="start" title="Accueil" href="https://neamar.fr/index.php" />
+	<link rel="start" title="Accueil" href="https://lachal.neamar.fr/index.php" />
 	<?php echo $AddLine . "\n"; ?>
-	<?php if(!isset($NoDefaultDesign)) {?>
-	<link href="https://neamar.fr/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
-	<?php } ?>
-	<link href="https://neamar.fr/Menu.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
+	<link href="/Menu.css" rel="stylesheet" type="text/css" media="screen" />
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [['\\(','\\)']]}
