@@ -31,4 +31,6 @@ RewriteRule ^Hist-([0-9]{1,2})$  /Exp.php?ShowOnly=$1 [L]
 RewriteRule ^([a-zA-Z])$  /index.php?ShowOnlyLetter=$1 [L]
 RewriteRule ^([-a-zA-Z0-9&;%ϋόξοιθκτ,_]+)$  /AffiMot.php?ShowOnly=$1 [L]
 
-Header set Cache-Control "max-age=172800, public, must-revalidate"
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+  Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
