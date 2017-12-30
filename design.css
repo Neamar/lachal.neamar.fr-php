@@ -1,3 +1,378 @@
+/* definition_design.css */
+body
+{
+  counter-reset: numero section;
+}
+
+#Main dt
+{
+  padding:5px;
+  font-weight:bold;
+  line-height:20px;
+  margin-bottom:-1px;
+  text-transform:capitalize;
+  border:1px solid black;
+}
+#Main dt:before
+{
+  counter-increment: numero;                   /* Incrémente le compteur de section */
+  content:counter(numero) " |  ";   /* Affiche le compteur */
+  color:gray;
+}
+
+#Main .AloneDefinition > h2 + p
+{
+  font-size:130%;
+}
+
+#Main dd
+{
+  padding:5px;
+  text-indent:25px;
+  border:1px solid black;
+  margin-bottom:25px;
+}
+#Main dd:first-letter, dd li:first-letter
+{
+  text-transform:uppercase;
+}
+
+/* Pour les catégories */
+#Main dt em
+{
+  color:gray;
+  text-align:right;
+  display:block;
+}
+
+#Main fieldset
+{
+  background-color:white;
+  border:1px solid black;
+  padding-bottom:15px;
+}
+
+#Main legend
+{
+  font-size:1.3em;
+  background-color:white;
+  padding:5px;
+  font-weight:bold;
+  border:1px solid black;
+  border-bottom:none;
+}
+
+/* Pour la liste des expressions */
+.Liste
+{
+  margin-top:25px;
+  margin-bottom:25px;
+/*  background:transparent url("Pics/Icones/Rubrique_light.png") no-repeat scroll right bottom; */
+}
+
+.Liste legend
+{
+    text-transform:uppercase;
+    font-size:1.7em;
+}
+.Liste legend:before
+{
+  counter-increment: section;
+  content:counter(section) " |  ";
+  color:gray;
+}
+
+
+.Lettre
+{
+  margin:50px;
+  font-size:4em;
+  text-align:center;
+}
+
+.petitTexte
+{
+  color:gray;
+  font-style:italic;
+  font-size:0.7em;
+}
+
+.flottant
+{
+  float:left;
+}
+
+.Ancre
+{
+  color:rgb(0,0,75);
+  font-variant:normal;
+  text-decoration: none;
+}
+.Ancre:hover
+{
+  color:blue;
+  text-decoration: underline overline;
+}
+
+
+.Legal:before
+{
+  content:"Encyclopædia Lachalis. Exemples par M. Lachal. Les noms de M. Lachal et des élèves cités le sont avec l'autorisation expresse de leurs propriétaires. Les définitions, fournies sans garantie, peuvent être réutilisées sans conditions.";
+/*  font-size:0.8em;
+  font-style:italic;*/
+}
+.Legal
+{
+  text-align:center;
+  margin-top:50px;
+  font-size:0.8em;
+  font-style:italic;
+}
+
+@media screen and (max-width: 699px) {
+  #Main {
+    margin: 10px;
+    font-size: 1.2em;
+  }
+
+  img {
+    max-width: 90%;
+  }
+}
+
+/* Typo.css */
+em em
+{/*Deux mises en emphase ramènenent à l'état standard*/
+  font-style:normal;
+}
+
+em em em, em.italique
+{/*Trois mises en emphase : retour à l'italique ou forçage de l'italique.*/
+  font-style:italic;
+}
+
+em.emph1 {color:blue;}
+em.emph2 {color:red;}
+em.emph3 {color:green;}
+em.emph4 {color:maroon;}
+em.emph5 {color:purple;}
+em.emph6 {color:navy;}
+
+
+abbr, acronym
+{/*Afficher un curseur en forme. de point d'interrogation sur les acronymes*/
+  border-bottom: 1px dotted #333;
+  cursor: help;
+}
+
+sup a
+{/*Masquer le style des liens pour les liens en footnote.*/
+  text-decoration:none;
+  color:black;
+}
+
+
+/*/////////////////////////////////////
+//ENVIRONNEMENTS
+/////////////////////////////////////*/
+.abstract
+{
+  margin:10px;
+  padding:20px;
+  font-size:.9em;
+  border-left:1px solid gray;
+  border-right:1px solid gray;
+  font-style:italic;
+}
+
+.abstract:before
+{
+  display:block;
+  content:"RÉSUMÉ";
+  text-align:center;
+}
+
+.figure
+{
+  margin:20px;
+}
+
+.figure *
+{
+  text-align:center;
+}
+
+body {
+  counter-reset: figure;
+}
+
+.figure .legend
+{
+  color:gray;
+  display:block;
+  margin:auto;
+  font-size:90%;
+}
+
+.figure .legend:before
+{
+  counter-increment:figure;
+  content:"(fig. " counter(figure) ") ";
+}
+
+.pullquote
+{
+  margin:15px;
+  float:right;
+  font-size:1.6em;
+  max-width:20%;
+}
+
+.pullquote p
+{
+  text-indent:0;
+}
+
+.pullquote:nth-of-type(even)
+{
+  float:left;
+}
+
+table.quizz
+{
+  cursor:help;
+}
+
+table.quizz caption
+{
+  border:none;
+}
+
+table.quizz tr .answer
+{
+  visibility:hidden;
+}
+
+table.quizz tr:hover .answer
+{
+  visibility:visible;
+}
+
+form.qcm h5
+{
+  text-align:center;
+}
+
+form.qcm .qcm_wrapper
+{
+  margin:auto;
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  -moz-column-gap: 1em;
+  -moz-column-rule:1px solid gray;
+  column-count: 2;
+  column-gap: 1em;
+  column-rule:1px solid gray;
+}
+
+form.qcm fieldset
+{
+  border:1px dashed green;
+}
+
+form.qcm fieldset legend
+{
+  font-size:.8em;
+}
+
+form.qcm div.qcm_answer
+{
+  padding-left:10px;
+  margin-left:10px;
+  border-left:1px solid gray;
+}
+
+.verse p
+{
+  text-align:center;
+  font-style:italic;
+  text-indent:0;
+}
+
+
+
+
+/* Classes sur quelques éléments. */
+span.quickref
+{
+  border:1px dotted green;
+  background-color:#abffab;
+  font-family:Courrier;
+  margin:4px;
+}
+
+span.roman
+{
+  text-transform:lowercase;
+  font-variant:small-caps;
+}
+
+p.displaymath
+{
+  text-align:center;
+}
+
+hr.court
+{
+  width:40%;
+}
+
+hr.footnote
+{/*La barre de séparation des notes de bas de page.*/
+  margin-left:0;
+  margin-bottom:0;
+}
+
+hr.footnote + ol
+{/*Le contenu des notes est légérement plus petit que le reste du texte.*/
+  font-size:85%;
+  margin-top:1px;
+  list-style-type: none;
+}
+
+hr.footnote + ol li
+{/*Le contenu des notes est légérement plus petit que le reste du texte.*/
+  line-height:1em;
+}
+
+
+
+
+
+
+
+
+
+/* Et enfin, des classes abstraites qui peuvent s'appliquer partout. */
+.ss
+{/*Fonte sans serif (sans les empattements sur les lettres)*/
+  font-family:sans-serif;
+}
+
+.ms
+{/*Fonte monospace (espacement constant). Obsolet (remplacé par <tt>) mais gardé pour compatibilité*/
+  font-family:monospace;
+}
+
+.century
+{
+  text-transform:lowercase;
+  font-variant:small-caps;
+}
+
+
+/* design.css */
+
 /* Le corps principal du document. */
 #Main
 {
@@ -216,4 +591,201 @@ a.IMG_Interactive img:hover
 table li
 {
   text-align:left;
+}
+
+/* Menu.css */
+body
+{
+  background: #f4f1f1;
+  font-size:80%;
+}
+
+/*Le menu */
+
+#menu
+{
+  background:transparent url("https://neamar.fr/Pics/CSS/tile.png") repeat-x;
+  position:fixed;
+  top:0;
+  left:0;
+  height:36px;
+  width:100%;
+  z-index:1000;
+}
+
+/* Les conteneurs */
+#menu dl
+{
+  float:left;
+  width:18%;
+  padding:0;
+  margin:0;
+}
+
+/* Le caption du menu*/
+#menu dl dt
+{
+  cursor: pointer;
+  text-align:center;
+  width:130px;
+  background:url("https://neamar.fr/Pics/CSS/menu.png") no-repeat right 2px;
+}
+#menu dl:hover dt
+{
+  background-image:url("https://neamar.fr/Pics/CSS/menu_hover.png");
+}
+
+#menu dl .Single_Item
+{
+  background-image:url("");
+  margin-top:0;
+}
+#menu dl:hover .Single_Item
+{
+  background-image:url("https://neamar.fr/Pics/CSS/single_menu_hover.png");
+}
+
+/* Les liens */
+#menu dl dt a, #menu dl dd a
+{
+  display:block;
+  padding:0;
+  margin:0;
+  padding-top:8px;
+  font-weight:bold;
+  text-decoration:none;
+  font-family: verdana,arial,sans-serif;
+  color:white;
+  height:28px;
+}
+#menu dl dd a
+{
+  font-weight:normal;
+  height:1em;
+}
+
+/* Le contenu du menu */
+#menu dl dd
+{
+  display:none;
+  margin: 0;
+  padding: 0;
+  padding-bottom:1px;
+  width:259px;
+}
+#menu dl:hover dd
+{
+  display:block;
+}
+
+/* Les élements internes */
+#menu dl dd ul
+{
+  list-style-type: none;
+  list-style-position:outside;
+  padding:0;
+  margin:0;
+  opacity:0.9;
+}
+
+/* Encore... */
+#menu dl dd li
+{
+  margin:0;
+  padding-left:5px;
+  height:22px;
+  background-color:rgb(101,155,177);
+  background-image:url("https://neamar.fr/Pics/CSS/sous_menu_bleu.png");
+}
+#menu dl dd li:hover
+{
+  background-color:rgb(75,143,0);
+  background-image:url("https://neamar.fr/Pics/CSS/sous_menu_bleu_hover.png");
+  padding-left:25px;
+  opacity:1;
+  width:234px;
+}
+
+/* Les améliorations graphiques : le conteneur de fin de liste */
+#menu dl dd ul .fin_liste
+{
+  background-image:url("https://neamar.fr/Pics/CSS/sous_menu_bleu_fin.png");
+  height:14px;
+  background-color:transparent;
+}
+#menu dl dd ul .fin_liste:hover
+{
+  background-image:url("https://neamar.fr/Pics/CSS/sous_menu_bleu_fin.png");
+  background-color:transparent;
+}
+
+/* Les sous-sous-menus, rarement utilisés */
+#menu dl dd li ul
+{
+  border:1px solid black;
+  border-top:0px;
+  display:none;
+  position:relative;
+  left:150px;
+  top:-21px;
+  width:228px;
+}
+#menu dl dd li:hover ul
+{
+  display:block;
+}
+
+#menu dl dd li li
+{
+  background-image:url("https://neamar.fr/Pics/CSS/sous_menu_bleu_reversed_tiny.png");
+}
+
+#menu #PayPal
+{
+  display:none;
+  opacity:0.2;
+  filter:alpha(opacity=20);
+}
+#menu:hover  #PayPal
+{
+  display:block;
+}
+#menu #PayPal:hover
+{
+  opacity:1;
+}
+
+#menu #GoogleSearch
+{
+  opacity:0.2;
+  filter:alpha(opacity=20);
+}
+#menu #GoogleSearch:hover
+{
+  opacity:1;
+}
+
+
+#Main
+{
+  position:absolute;
+  top:65px;
+}
+
+@media screen and (max-width: 699px) {
+  #menu-misc {
+    display: none;
+  }
+
+  #menu-accueil {
+    display: none;
+  }
+
+  #GoogleSearch {
+    display: none;
+  }
+
+  #menu dl {
+    width: auto;
+  }
 }

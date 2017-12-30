@@ -39,8 +39,6 @@ ob_start('Parseur');
 $AddLine = '<link rel="alternate" type="application/rss+xml" title="Derniers ajouts sur le dictionnaire" href="rss.php" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><![endif]-->
-<link href="/definition_design.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="/Typo.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="/JS.js" async></script>';
 $menus = array ("Accueil","Dictionnaire","Rubriques");
 $NoGift = 1;

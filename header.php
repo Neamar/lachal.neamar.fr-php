@@ -29,7 +29,6 @@ if(!isset($description))
 	<link rel="start" title="Accueil" href="https://lachal.neamar.fr/index.php" />
 	<?php echo $AddLine . "\n"; ?>
 	<link href="/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
-	<link href="/Menu.css" rel="stylesheet" type="text/css" media="screen" />
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [['\\(','\\)']]}
