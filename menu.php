@@ -40,8 +40,8 @@ $AddLine = '<link rel="alternate" type="application/rss+xml" title="Derniers ajo
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><![endif]-->
 <link href="/definition_design.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="//neamar.fr/Res/Typo/Typo.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="/JS.js"></script>';
+<link href="/Typo.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="/JS.js" async></script>';
 $menus = array ("Accueil","Dictionnaire","Rubriques");
 $NoGift = 1;
 $NoWelcomeCenter = 1;

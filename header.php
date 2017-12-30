@@ -35,7 +35,7 @@ if(!isset($description))
     tex2jax: {inlineMath: [['\\(','\\)']]}
   });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
 
 <body>
@@ -93,7 +93,7 @@ if(!isset($description))
 		<input type="submit" name="sa" value="Rechercher" />
 	</div>
 	</form>
-	<script type="text/javascript" src="//www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=fr"></script>
+	<script type="text/javascript" src="//www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=fr" async></script>
 </div>
 	<?php
 	}
