@@ -179,9 +179,9 @@ au revoir lanière d...<br /><br />
 <p><a href="Ressources/au_revoir2010.pdf">Fichier PDF original</a></p>
 
 <p><img src="Pics/AuRevoir/53-Remerciements.jpg" alt="Remerciements de la promo 53" style="width:90%;" /></p>
-<p><img src="Pics/AuRevoir/G53-1.jpg" alt="M. Lachal et ses chocolats" style="width:90%;" /></p>
-<p><img src="Pics/AuRevoir/G53-2.jpg" alt="M. Lachal et la promo INSA 53" style="width:90%;" /></p>
-<p><img src="Pics/AuRevoir/G53-3.jpg" alt="INSA promo 53" style="width:90%;" /></p>
+<p><img src="Pics/AuRevoir/G53-1.JPG" alt="M. Lachal et ses chocolats" style="width:90%;" /></p>
+<p><img src="Pics/AuRevoir/G53-2.JPG" alt="M. Lachal et la promo INSA 53" style="width:90%;" /></p>
+<p><img src="Pics/AuRevoir/G53-3.JPG" alt="INSA promo 53" style="width:90%;" /></p>
 
 <?php
 }
