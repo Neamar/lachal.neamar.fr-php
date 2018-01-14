@@ -29,20 +29,20 @@ if(!isset($description))
 	<link rel="start" title="Accueil" href="https://lachal.neamar.fr/index.php" />
 	<?php echo $AddLine . "\n"; ?>
 	<link href="/design.css" rel="stylesheet" title="Design par défaut. (Vista)" type="text/css" media="screen" />
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['\\(','\\)']]}
-  });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {inlineMath: [['\\(','\\)']]}
+	});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4257957-11"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-4257957-11');
+		gtag('config', 'UA-4257957-11');
 	</script>
 </head>
 
