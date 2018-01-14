@@ -35,6 +35,15 @@ if(!isset($description))
   });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4257957-11"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-4257957-11');
+	</script>
 </head>
 
 <body>
@@ -97,15 +106,6 @@ if(!isset($description))
 	<?php
 	}
 	?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4257957-11"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-4257957-11');
-</script>
 
 <noscript><p style="color:red; text-decoration: blink; font-weight:800;"><br /><br /><br />Afin de pouvoir profiter au maximum des sites sur neamar.fr, il est fortement recommandé d'activer JavaScript.</p></noscript>
 </div>
