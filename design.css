@@ -117,10 +117,9 @@ body
 
 .Legal:before
 {
-  content:"Encyclopædia Lachalis. Exemples par M. Lachal. Les noms de M. Lachal et des élèves cités le sont avec l'autorisation expresse de leurs propriétaires. Les définitions, fournies sans garantie, peuvent être réutilisées sans conditions.";
-/*  font-size:0.8em;
-  font-style:italic;*/
+  content:"Encyclopœdia Lachalis. Exemples par M. Lachal. Les noms de M. Lachal et des élèves cités le sont avec l'autorisation expresse de leurs propriétaires. Les définitions, fournies sans garantie, peuvent être réutilisées sans conditions.";
 }
+
 .Legal
 {
   text-align:center;
