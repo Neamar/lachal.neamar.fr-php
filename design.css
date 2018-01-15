@@ -15,7 +15,7 @@ body
 }
 #Main dt:before
 {
-  counter-increment: numero;                   /* IncrÃ©mente le compteur de section */
+  counter-increment: numero;                   /* Incrémente le compteur de section */
   content:counter(numero) " |  ";   /* Affiche le compteur */
   color:gray;
 }
@@ -37,7 +37,7 @@ body
   text-transform:uppercase;
 }
 
-/* Pour les catÃ©gories */
+/* Pour les catégories */
 #Main dt em
 {
   color:gray;
@@ -117,7 +117,7 @@ body
 
 .Legal:before
 {
-  content:"EncyclopÅ“dia Lachalis. Exemples par M. Lachal. Les noms de M. Lachal et des Ã©lÃ¨ves citÃ©s le sont avec l'autorisation expresse de leurs propriÃ©taires. Les dÃ©finitions, fournies sans garantie, peuvent Ãªtre rÃ©utilisÃ©es sans conditions.";
+  content:"Encyclopoedia Lachalis. Exemples par M. Lachal. Les noms de M. Lachal et des élèves cités le sont avec l'autorisation expresse de leurs propriétaires. Les définitions, fournies sans garantie, peuvent être réutilisées sans conditions.";
 }
 
 .Legal
@@ -141,12 +141,12 @@ body
 
 /* Typo.css */
 em em
-{/*Deux mises en emphase ramÃ¨nenent Ã  l'Ã©tat standard*/
+{/*Deux mises en emphase ramènenent à l'état standard*/
   font-style:normal;
 }
 
 em em em, em.italique
-{/*Trois mises en emphase : retour Ã  l'italique ou forÃ§age de l'italique.*/
+{/*Trois mises en emphase : retour à l'italique ou forçage de l'italique.*/
   font-style:italic;
 }
 
@@ -187,7 +187,7 @@ sup a
 .abstract:before
 {
   display:block;
-  content:"RÃ‰SUMÃ‰";
+  content:"RÉSUMÉ";
   text-align:center;
 }
 
@@ -301,7 +301,7 @@ form.qcm div.qcm_answer
 
 
 
-/* Classes sur quelques Ã©lÃ©ments. */
+/* Classes sur quelques éléments. */
 span.quickref
 {
   border:1px dotted green;
@@ -327,20 +327,20 @@ hr.court
 }
 
 hr.footnote
-{/*La barre de sÃ©paration des notes de bas de page.*/
+{/*La barre de séparation des notes de bas de page.*/
   margin-left:0;
   margin-bottom:0;
 }
 
 hr.footnote + ol
-{/*Le contenu des notes est lÃ©gÃ©rement plus petit que le reste du texte.*/
+{/*Le contenu des notes est légérement plus petit que le reste du texte.*/
   font-size:85%;
   margin-top:1px;
   list-style-type: none;
 }
 
 hr.footnote + ol li
-{/*Le contenu des notes est lÃ©gÃ©rement plus petit que le reste du texte.*/
+{/*Le contenu des notes est légérement plus petit que le reste du texte.*/
   line-height:1em;
 }
 
@@ -359,7 +359,7 @@ hr.footnote + ol li
 }
 
 .ms
-{/*Fonte monospace (espacement constant). Obsolet (remplacÃ© par <tt>) mais gardÃ© pour compatibilitÃ©*/
+{/*Fonte monospace (espacement constant). Obsolet (remplacé par <tt>) mais gardé pour compatibilité*/
   font-family:monospace;
 }
 
@@ -441,7 +441,7 @@ caption /* Titre du tableau */
   font-weight: bold;
   font-size: 1.2em;
   color: #009900;
-  margin-bottom: 20px; /* Pour Ã©viter que le titre ne soit trop collÃ© au tableau en-dessous */
+  margin-bottom: 20px; /* Pour éviter que le titre ne soit trop collé au tableau en-dessous */
 }
 
 table
@@ -521,7 +521,7 @@ Les couleurs des tableaux
   font-size:75%;
 }
 
-/*Les mathÃ©matiques "inline"*/
+/*Les mathématiques "inline"*/
 .TexTexte
 {
   white-space:nowrap;
@@ -646,7 +646,7 @@ body
   display:block;
 }
 
-/* Les Ã©lements internes */
+/* Les élements internes */
 #menu dl dd ul
 {
   list-style-type: none;
@@ -674,7 +674,7 @@ body
   width:234px;
 }
 
-/* Les amÃ©liorations graphiques : le conteneur de fin de liste */
+/* Les améliorations graphiques : le conteneur de fin de liste */
 #menu dl dd ul .fin_liste
 {
   background-image:url("/Pics/CSS/sous_menu_bleu_fin.png");
@@ -687,7 +687,7 @@ body
   background-color:transparent;
 }
 
-/* Les sous-sous-menus, rarement utilisÃ©s */
+/* Les sous-sous-menus, rarement utilisés */
 #menu dl dd li ul
 {
   border:1px solid black;
