@@ -40,6 +40,11 @@ $AddLine = '<link rel="alternate" type="application/rss+xml" title="Derniers ajo
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><![endif]-->
 <script type="text/javascript" src="/JS.js" async></script>';
+
+if(isset($canonical)) {
+	$AddLine .= '<link rel="canonical" href="https://lachal.neamar.fr/' . $canonical . '" />';
+}
+
 $menus = array ("Accueil","Dictionnaire","Rubriques");
 $NoGift = 1;
 $NoWelcomeCenter = 1;

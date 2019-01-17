@@ -9,6 +9,7 @@ if(isset($_GET['Categorie']))
 	$titre.='(Catégorie : ' . $_GET['Categorie'] . ')';
 }
 
+$canonical = "index.php";
 include("menu.php");
 
 $Condition=($_GET['Categorie']=='');
