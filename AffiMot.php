@@ -11,12 +11,12 @@ if($_GET['ShowOnly']!=strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET
 	header('Location:' . (strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1))),False,301);
 	exit();
 }
+$canonical = '<nolink>' . $_GET['ShowOnly'] . '</nolink>';
 
 //Remettre le mot sous forme correcte.
 $_GET['ShowOnly']=Decode($_GET['ShowOnly']);
 
 $titre=$_GET['ShowOnly'] . ' : Définition, synonymes et exemples d\'utilisation';
-$canonical = '<nolink>' . strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1)) . '</nolink>';
 include("menu.php");
 
 $CurrentWord=mysql_fetch_assoc(mysql_query('SELECT Mot,Definition,Synonyme,Lien, GROUP_CONCAT(Categorie SEPARATOR \' | \') AS Categorie,Exemple1,Exemple2
