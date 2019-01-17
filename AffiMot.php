@@ -16,7 +16,7 @@ if($_GET['ShowOnly']!=strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET
 $_GET['ShowOnly']=Decode($_GET['ShowOnly']);
 
 $titre=$_GET['ShowOnly'] . ' : Définition, synonymes et exemples d\'utilisation';
-$canonical = (strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1)))
+$canonical = (strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1)));
 include("menu.php");
 
 $CurrentWord=mysql_fetch_assoc(mysql_query('SELECT Mot,Definition,Synonyme,Lien, GROUP_CONCAT(Categorie SEPARATOR \' | \') AS Categorie,Exemple1,Exemple2
