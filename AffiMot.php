@@ -8,7 +8,7 @@ function Decode($Texte)
 if($_GET['ShowOnly']!=strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1)))
 {
 	//Bien formater les URL
-	header('Location:' . (strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1))));
+	header('Location:' . (strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1))),False,301);
 	exit();
 }
 
