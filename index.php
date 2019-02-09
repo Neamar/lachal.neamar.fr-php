@@ -19,7 +19,7 @@ if($Condition=='')
 $Liste=mysql_query('SELECT Mot,Definition,GROUP_CONCAT(Categorie SEPARATOR \' | \') AS Categories
 FROM Lachal_Citations
 LEFT JOIN Lachal_Relations ON Parent=Lachal_Citations.ID
-WHERE Mot LIKE "' . isset($_GET['ShowOnlyLetter'] ? $_GET['ShowOnlyLetter'] : '') . '%"
+WHERE Mot LIKE "' . (isset($_GET['ShowOnlyLetter']) ? $_GET['ShowOnlyLetter'] : '') . '%"
 GROUP BY Mot
 HAVING Categories LIKE "%' . $_GET['Categorie'] . '%" OR (ISNULL(Categories) AND ' . $Condition . ')
 ORDER BY Mot
