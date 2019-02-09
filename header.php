@@ -1,4 +1,6 @@
 <?php
+// Initialise composer
+require_once __DIR__ . '/vendor/autoload.php';
 @ini_set('default_charset', 'ISO-8859-1');
 
 if(!isset($titre))
