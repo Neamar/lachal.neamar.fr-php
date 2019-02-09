@@ -2,47 +2,47 @@
 $titre="Pimentez vos messages !";
 include('menu.php');
 ?>
-<h1>Correspondance acidulée</h1>
-<p>Lassé des traditionnels "Cher M." et des "Veuillez agréer l'expression de..." ?<br />
-M. Lachal est là pour vous aider ! Voici quelques formulations qui dévraient éveiller l'intêret de votre interlocuteur... et peut être même le faire sourire !</p>
+<h1>Correspondance acidulÃ©e</h1>
+<p>LassÃ© des traditionnels "Cher M." et des "Veuillez agrÃ©er l'expression de..." ?<br />
+M. Lachal est lÃ  pour vous aider ! Voici quelques formulations qui dÃ©vraient Ã©veiller l'intÃªret de votre interlocuteur... et peut Ãªtre mÃªme le faire sourire !</p>
 
 <h2>Formules d'introduction</h2>
 <ul>
-<li><cite>Chers affidés réunis en condominium plénipotentiaire</cite> :<br /> Si vous devez vous adresser à plusieurs personnes en qui vous avez confiance, et dont le niveau hiérarchique est supérieur au vôtre. Attention, le terme Affidé connote une certaine familiarité : ne l'utilisez pas dans une lettre d'embauche...</li>
-<li><cite>Cher affidé non complètement stipendié</cite> : <br />Pour s'adresser à un ancien compagnon d'armée avec lequel on a fait les 36 coups...</li>
-<li><cite>Cher affidé</cite> :<br />Simple et sans subtilité, mais plus enthousiaste qu'un vague "Ouéch mon pote"...</li>
-<li><cite>Cher affidé non obsolète</cite> :<br />À un ancien ami avec qui on regrette d'avoir perdu le contact, ou à un ancien ami à qui l'on compte demander un service !</li>
-<li><cite>Cher affidé priviligié</cite> :<br />L'ajout de "privilégié" laisse présager une demande, un service.</li>
-<li><cite>Cher scribe</cite> :<br />Dans la lignée du précédent : direct et clair ! Pour une lettre à un secrétaire...</li>
-<li><cite>Cher thuriféraire-en-chef</cite> :<br />À un collègue qui lèche les pompes du patron, à un fayot. À mettre en tête de sa lettre de démission si votre chef vous a viré pour faire plaisir au patron.</li>
-<li><cite>Cher parangon ostentatoire</cite> :<br />À une de vos idoles souvent présente dans les médias...</li>
-<li><cite>Cher imminent "ancien patron" (voilà qui est prodromique n'est-ce pas ?)</cite> :<br />A mettre en tête de votre lettre de démission...</li>
-<li><cite>Chers zélateurs stipendiés</cite> :<br />À des fans d'un sujet au goût douteux.</li>
-<li><cite>Chers parèdres associés</cite> :<br />Pour ses co-actionnaires en bourse, ou ses collègues de niveau hiérarchique équivalent.</li>
-<li><cite>Votre pédotribe musagète</cite> :<br />Si vous êtes écrivain et que vous venez d'aider une éphémère célébrité à écrire son autobiographie, utilisez cette formulation dans l'en-tête du mail auquel vous joindrez le livre !</li>
-<li><cite>À l'aréopage de détracteurs coercitifs insatiables exerçant son condominium oligarchique</cite> :<br />Si vous ne savez vraiment pas quoi mettre, mettez cette phrase, et ainsi personne ne comprendra...</li>
-<li><cite>Chers paparazzi</cite> :<br />À une personne qui aurait atteint à votre vie privée.</li>
-<li><cite>Cher hiérodule informaticien </cite> :<br />À une personne qui gére vos affaires de façon virtuelle.</li>
+<li><cite>Chers affidÃ©s rÃ©unis en condominium plÃ©nipotentiaire</cite> :<br /> Si vous devez vous adresser Ã  plusieurs personnes en qui vous avez confiance, et dont le niveau hiÃ©rarchique est supÃ©rieur au vÃ´tre. Attention, le terme AffidÃ© connote une certaine familiaritÃ© : ne l'utilisez pas dans une lettre d'embauche...</li>
+<li><cite>Cher affidÃ© non complÃ¨tement stipendiÃ©</cite> : <br />Pour s'adresser Ã  un ancien compagnon d'armÃ©e avec lequel on a fait les 36 coups...</li>
+<li><cite>Cher affidÃ©</cite> :<br />Simple et sans subtilitÃ©, mais plus enthousiaste qu'un vague "OuÃ©ch mon pote"...</li>
+<li><cite>Cher affidÃ© non obsolÃ¨te</cite> :<br />Ã€ un ancien ami avec qui on regrette d'avoir perdu le contact, ou Ã  un ancien ami Ã  qui l'on compte demander un service !</li>
+<li><cite>Cher affidÃ© priviligiÃ©</cite> :<br />L'ajout de "privilÃ©giÃ©" laisse prÃ©sager une demande, un service.</li>
+<li><cite>Cher scribe</cite> :<br />Dans la lignÃ©e du prÃ©cÃ©dent : direct et clair ! Pour une lettre Ã  un secrÃ©taire...</li>
+<li><cite>Cher thurifÃ©raire-en-chef</cite> :<br />Ã€ un collÃ¨gue qui lÃ¨che les pompes du patron, Ã  un fayot. Ã€ mettre en tÃªte de sa lettre de dÃ©mission si votre chef vous a virÃ© pour faire plaisir au patron.</li>
+<li><cite>Cher parangon ostentatoire</cite> :<br />Ã€ une de vos idoles souvent prÃ©sente dans les mÃ©dias...</li>
+<li><cite>Cher imminent "ancien patron" (voilÃ  qui est prodromique n'est-ce pas ?)</cite> :<br />A mettre en tÃªte de votre lettre de dÃ©mission...</li>
+<li><cite>Chers zÃ©lateurs stipendiÃ©s</cite> :<br />Ã€ des fans d'un sujet au goÃ»t douteux.</li>
+<li><cite>Chers parÃ¨dres associÃ©s</cite> :<br />Pour ses co-actionnaires en bourse, ou ses collÃ¨gues de niveau hiÃ©rarchique Ã©quivalent.</li>
+<li><cite>Votre pÃ©dotribe musagÃ¨te</cite> :<br />Si vous Ãªtes Ã©crivain et que vous venez d'aider une Ã©phÃ©mÃ¨re cÃ©lÃ©britÃ© Ã  Ã©crire son autobiographie, utilisez cette formulation dans l'en-tÃªte du mail auquel vous joindrez le livre !</li>
+<li><cite>Ã€ l'arÃ©opage de dÃ©tracteurs coercitifs insatiables exerÃ§ant son condominium oligarchique</cite> :<br />Si vous ne savez vraiment pas quoi mettre, mettez cette phrase, et ainsi personne ne comprendra...</li>
+<li><cite>Chers paparazzi</cite> :<br />Ã€ une personne qui aurait atteint Ã  votre vie privÃ©e.</li>
+<li><cite>Cher hiÃ©rodule informaticien </cite> :<br />Ã€ une personne qui gÃ©re vos affaires de faÃ§on virtuelle.</li>
 
 </ul>
 
 <h2>Formules de conclusion</h2>
 <ul>
-<li><cite>Votre ex-[Assemblage impromptu et fantaisiste de deux termes], e.g. mathématico-coach</cite> :<br />Pour terminer sa missive sur une note humorisitique...</li>
-<li><cite>Votre humble cicérone</cite> OU <cite>Votre mentor</cite> :<br /> Pour une lettre à un de vos disciples, où à une personne que vous avez aidée d'une façon ou d'une autre.</li>
-<li><cite>Votre cicérone suranné</cite> :<br />D'un ancien supérieur hiérarchique à un de ses anciens employés avec qui il maintient un contact amical.</li>
-<li><cite>Votre ex-pédotribe obsolète</cite> :<br />À un ancien compagnon de sport...</li>
-<li><cite>Bonnes vêpres !</cite> : <br />C'est quand même plus racé que "Bonsoir" ! A utiliser dans un mail envoyer en début de soirée (17~19 heures).</li>
-<li><cite>Toujours avec mon allégeance pour ce long pensum </cite> :<br />À placer à la fin d'une missive particulièrement longue et complète.</li>
-<li><cite>Je compte donc sur votre satisfecit puis sur votre viatique pour éviter toute imprécation inique</cite> :<br />À quelqu'un à qui on propose un marché, ou avec qui on a réalisé un mauvais coup qu'on cherche à dissimuler.</li>
-<li><cite>Votre automédon, coryphée et autre psychopompe</cite> :<br /> D'un gourou à un adepte particulièrement fidèle de sa secte.</li>
-<li><cite>Votre humble coryphée (qui n'a pas la prétention de se prendre pour un automédon psychopompe)</cite> :<br />D'un maître qui ferait remarquer à son élève une quelconque faute de goût dans son &OElig;uvre.</li>
-<li><cite>En espérant recueillir votre allégeance</cite> :<br />En fin d'une lettre dans laquelle on a proposé un marché à un collègue, ami...</li>
-<li><cite>Votre humble factotum qui ne souhaite pas sentir le remugle...</cite> :<br />D'une personne qui se rappelle à la bonne volonté d'une autre, en espérant que son correspondant ne l'a pas oublié. Peut aussi désigner un intérimaire qui se rappelerait à son employeur dans l'espoir d'être repris, ou simplement payé.</li>
-<li><cite>Votre pédotribe qui aspire à l'immarcescibilité</cite> :<br />D'un coach (mental ou physique) qui espère passer à la postérité.</li>
+<li><cite>Votre ex-[Assemblage impromptu et fantaisiste de deux termes], e.g. mathÃ©matico-coach</cite> :<br />Pour terminer sa missive sur une note humorisitique...</li>
+<li><cite>Votre humble cicÃ©rone</cite> OU <cite>Votre mentor</cite> :<br /> Pour une lettre Ã  un de vos disciples, oÃ¹ Ã  une personne que vous avez aidÃ©e d'une faÃ§on ou d'une autre.</li>
+<li><cite>Votre cicÃ©rone surannÃ©</cite> :<br />D'un ancien supÃ©rieur hiÃ©rarchique Ã  un de ses anciens employÃ©s avec qui il maintient un contact amical.</li>
+<li><cite>Votre ex-pÃ©dotribe obsolÃ¨te</cite> :<br />Ã€ un ancien compagnon de sport...</li>
+<li><cite>Bonnes vÃªpres !</cite> : <br />C'est quand mÃªme plus racÃ© que "Bonsoir" ! A utiliser dans un mail envoyer en dÃ©but de soirÃ©e (17~19 heures).</li>
+<li><cite>Toujours avec mon allÃ©geance pour ce long pensum </cite> :<br />Ã€ placer Ã  la fin d'une missive particuliÃ¨rement longue et complÃ¨te.</li>
+<li><cite>Je compte donc sur votre satisfecit puis sur votre viatique pour Ã©viter toute imprÃ©cation inique</cite> :<br />Ã€ quelqu'un Ã  qui on propose un marchÃ©, ou avec qui on a rÃ©alisÃ© un mauvais coup qu'on cherche Ã  dissimuler.</li>
+<li><cite>Votre automÃ©don, coryphÃ©e et autre psychopompe</cite> :<br /> D'un gourou Ã  un adepte particuliÃ¨rement fidÃ¨le de sa secte.</li>
+<li><cite>Votre humble coryphÃ©e (qui n'a pas la prÃ©tention de se prendre pour un automÃ©don psychopompe)</cite> :<br />D'un maÃ®tre qui ferait remarquer Ã  son Ã©lÃ¨ve une quelconque faute de goÃ»t dans son &OElig;uvre.</li>
+<li><cite>En espÃ©rant recueillir votre allÃ©geance</cite> :<br />En fin d'une lettre dans laquelle on a proposÃ© un marchÃ© Ã  un collÃ¨gue, ami...</li>
+<li><cite>Votre humble factotum qui ne souhaite pas sentir le remugle...</cite> :<br />D'une personne qui se rappelle Ã  la bonne volontÃ© d'une autre, en espÃ©rant que son correspondant ne l'a pas oubliÃ©. Peut aussi dÃ©signer un intÃ©rimaire qui se rappelerait Ã  son employeur dans l'espoir d'Ãªtre repris, ou simplement payÃ©.</li>
+<li><cite>Votre pÃ©dotribe qui aspire Ã  l'immarcescibilitÃ©</cite> :<br />D'un coach (mental ou physique) qui espÃ¨re passer Ã  la postÃ©ritÃ©.</li>
 <li><cite>Je compte sur votre viatique oblatif...<br />
-Avec mes remerciements anticipés,</cite>Requête urgente effectuée en dernier ressort, et qui appelle à une réponse rapide et totale. À utiliser en cas de graves problèmes.</li>
-<li><cite>Votre phoenix non complètement suranné</cite> : d'une personne qui réapparait pérodiquement dans la vie d'une autre pour apporter de ses nouvelles, et dont les intervalles entre chaque missives sont suffisament courts pour s'assurer que le récepteur n'a pas oublié l'expéditeur !</li>
+Avec mes remerciements anticipÃ©s,</cite>RequÃªte urgente effectuÃ©e en dernier ressort, et qui appelle Ã  une rÃ©ponse rapide et totale. Ã€ utiliser en cas de graves problÃ¨mes.</li>
+<li><cite>Votre phoenix non complÃ¨tement surannÃ©</cite> : d'une personne qui rÃ©apparait pÃ©rodiquement dans la vie d'une autre pour apporter de ses nouvelles, et dont les intervalles entre chaque missives sont suffisament courts pour s'assurer que le rÃ©cepteur n'a pas oubliÃ© l'expÃ©diteur !</li>
 </ul>
 </div>
 </body>

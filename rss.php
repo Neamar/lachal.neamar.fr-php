@@ -7,8 +7,8 @@
 <language>fr</language>
 <?php
 function StripCarac($Texte)
-{	//Remplacer les caractères accentués.
-$Acc=array('ô','ü','î','ï','é','è','ê','à',' ');
+{	//Remplacer les caractÃ¨res accentuÃ©s.
+$Acc=array('Ã´','Ã¼','Ã®','Ã¯','Ã©','Ã¨','Ãª','Ã ',' ');
 $Rep=array('o','u','i','i','e','e','e','a','_');
 return str_ireplace($Acc,$Rep,strtolower($Texte));
 }

@@ -1,28 +1,28 @@
 <?php
-$titre='Présentation générale de l\'encylopédie Lachalis';
-$_GET['ShowOnly']=1;//évite l'affichage des infos
+$titre='PrÃ©sentation gÃ©nÃ©rale de l\'encylopÃ©die Lachalis';
+$_GET['ShowOnly']=1;//Ã©vite l'affichage des infos
 include('menu.php');
 ?>
-<p style="text-align:right;"><q style="font-family:Monospace">Le passé de la langue conduit immédiatement l'esprit vers son avenir<br />C'est cette combinaison entre la permanence et la variation qui constitue l'histoire de la langue.</q><br /><em>Littré</em></p>
+<p style="text-align:right;"><q style="font-family:Monospace">Le passÃ© de la langue conduit immÃ©diatement l'esprit vers son avenir<br />C'est cette combinaison entre la permanence et la variation qui constitue l'histoire de la langue.</q><br /><em>LittrÃ©</em></p>
 
 <p><img style="float:right;" src="Pics/INSA.png" alt="Insa de Lyon" /></p>
-<h2>Vade-mecum du Bizuth insalien (à l'attention de la 51<sup>ème</sup> promo&hellip; et des suivantes)</h2>
+<h2>Vade-mecum du Bizuth insalien (Ã  l'attention de la 51<sup>Ã¨me</sup> promo&hellip; et des suivantes)</h2>
 <p class="flottant"><img src="Pics/Icones/Dic.png" alt="Dictionnaire" /></p>
-<h3>Présentation de l'Encyclopædia Lachalis</h3>
-<p>Notre professeur de mathématiques, M. Aimé Lachal, semble apprécier les bons mots de la langue française.<br />
-Voilà donc, à l'attention des élèves de la lanière C de 2007-2008, et plus particulièrement pour les groupes 11 et 12, une traduction en "français courant" du vocabulaire du prof.<br />
+<h3>PrÃ©sentation de l'EncyclopÃ¦dia Lachalis</h3>
+<p>Notre professeur de mathÃ©matiques, M. AimÃ© Lachal, semble apprÃ©cier les bons mots de la langue franÃ§aise.<br />
+VoilÃ  donc, Ã  l'attention des Ã©lÃ¨ves de la laniÃ¨re C de 2007-2008, et plus particuliÃ¨rement pour les groupes 11 et 12, une traduction en "franÃ§ais courant" du vocabulaire du prof.<br />
 
-Certes, maintenant que le temps a passé, nous n'avons plus M. Lachal en TD de Maths... mais il aurait été dommage de perdre tous ces bons mots !</p>
+Certes, maintenant que le temps a passÃ©, nous n'avons plus M. Lachal en TD de Maths... mais il aurait Ã©tÃ© dommage de perdre tous ces bons mots !</p>
 
-<p style="font-weight:900;">Pour finir cette envolée lyrique, un grand merci à M. Lachal pour ces heures de maths inoubliables, qui redorent la parure mathématique...</p>
+<p style="font-weight:900;">Pour finir cette envolÃ©e lyrique, un grand merci Ã  M. Lachal pour ces heures de maths inoubliables, qui redorent la parure mathÃ©matique...</p>
 
-<p style="margin-top:50px;"><big>&rarr; <strong><a href="index.php">Accès au dictionnaire...</a></strong></big></p>
+<p style="margin-top:50px;"><big>&rarr; <strong><a href="index.php">AccÃ¨s au dictionnaire...</a></strong></big></p>
 
-<p>Lien externe : <a href="http://maths.insa-lyon.fr/~alachal/">Page personnelle du pôle des mathématiques de M. Lachal</a></p>
+<p>Lien externe : <a href="http://maths.insa-lyon.fr/~alachal/">Page personnelle du pÃ´le des mathÃ©matiques de M. Lachal</a></p>
 
 <hr />
 
-<p style="text-align:center;">Vous appréciez le dictionnaire de M. Lachal ? Vous adulerez sûrement l'<a href="https://omnilogie.fr">omnilogie</a>. Chaque jour, un article de culture générale sur tout et n'importe quoi, pour se coucher moins bête le soir.</p>
+<p style="text-align:center;">Vous apprÃ©ciez le dictionnaire de M. Lachal ? Vous adulerez sÃ»rement l'<a href="https://omnilogie.fr">omnilogie</a>. Chaque jour, un article de culture gÃ©nÃ©rale sur tout et n'importe quoi, pour se coucher moins bÃªte le soir.</p>
 
 <hr />
 

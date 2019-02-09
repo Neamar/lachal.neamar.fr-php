@@ -16,7 +16,7 @@ $canonical = '<nolink>' . $_GET['ShowOnly'] . '</nolink>';
 //Remettre le mot sous forme correcte.
 $_GET['ShowOnly']=Decode($_GET['ShowOnly']);
 
-$titre=$_GET['ShowOnly'] . ' : Définition, synonymes et exemples d\'utilisation';
+$titre=$_GET['ShowOnly'] . ' : DÃ©finition, synonymes et exemples d\'utilisation';
 include("menu.php");
 
 $CurrentWord=mysql_fetch_assoc(mysql_query('SELECT Mot,Definition,Synonyme,Lien, GROUP_CONCAT(Categorie SEPARATOR \' | \') AS Categorie,Exemple1,Exemple2
@@ -32,15 +32,15 @@ if($CurrentWord==array())
 	//Gestion des erreurs
 	header("HTTP/1.0 404 Not Found");
 	$titre="404 : Mot introuvable !";
-	echo '<p class="flottant"><img src="Pics/Icones/NotFound.png" alt="Pas trouvé !" /></p>';
+	echo '<p class="flottant"><img src="Pics/Icones/NotFound.png" alt="Pas trouvÃ© !" /></p>';
 	echo '<h1>Erreur</h1>';
-	echo '<p>Le mot que vous recherchez est malheureusement introuvable.<br /><a href="index.php">Retour à la liste globale</a></p>';
+	echo '<p>Le mot que vous recherchez est malheureusement introuvable.<br /><a href="index.php">Retour Ã  la liste globale</a></p>';
 	echo '<h2>Mots similaires</h2>';
 	$Approx=mysql_query('SELECT Mot FROM Lachal_Citations
 WHERE Mot Like "' . $_GET['ShowOnly'] . '%"
 OR SOUNDEX(Mot) =  SOUNDEX(\'' . $_GET['ShowOnly'] . '\')
 ORDER BY Mot');
-	echo '<p>Peut être vouliez-vous l\'un des mots suivants :</p>';
+	echo '<p>Peut Ãªtre vouliez-vous l\'un des mots suivants :</p>';
 	echo '<ul>';
 	if(mysql_num_rows($Approx)==0)
 		echo '<li>Aucun mot semblable</li>';
@@ -54,17 +54,17 @@ ORDER BY Mot');
 else
 {
 ?>
-<h1>Définition, synonymes et exemples d'utilisation du mot « <?php echo $CurrentWord['Mot']; ?> »</h1>
+<h1>DÃ©finition, synonymes et exemples d'utilisation du mot Â« <?php echo $CurrentWord['Mot']; ?> Â»</h1>
 <dl id="Definitions">
 <?php
-$titre=$CurrentWord['Mot'] . ' : Définition, synonymes et exemples d\'utilisation';
+$titre=$CurrentWord['Mot'] . ' : DÃ©finition, synonymes et exemples d\'utilisation';
 echo '	<dt class="bleu"><nolink>' . $CurrentWord['Mot'] . '</nolink>';
 if($CurrentWord['Categorie']!='')
-	echo "<em>Catégorie : " . $CurrentWord['Categorie'] . '</em>';
+	echo "<em>CatÃ©gorie : " . $CurrentWord['Categorie'] . '</em>';
 echo '</dt>' . "\n";
 
 Typo::setTexte($CurrentWord['Definition']);
-echo '	<dd class="AloneDefinition"><h2>Définition</h2>' . "\n";
+echo '	<dd class="AloneDefinition"><h2>DÃ©finition</h2>' . "\n";
 echo '	' . Typo::Parse() . "\n";
 
 echo "	<h2>Synonymes :</h2>" . "\n";
@@ -89,7 +89,7 @@ echo '	</dd>' . "\n\n\n";
 echo '</dl>' . "\n";
 
 Typo::setTexte($CurrentWord['Definition']);
-$description='Définition de « ' . strtolower($CurrentWord['Mot']) . ' » : ' . Typo::parseLinear();//Pour les metas
+$description='DÃ©finition de Â« ' . strtolower($CurrentWord['Mot']) . ' Â» : ' . Typo::parseLinear();//Pour les metas
 ?>
 <p class="Legal"></p>
 <?php
