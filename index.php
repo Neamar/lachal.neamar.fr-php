@@ -12,6 +12,10 @@ if(isset($_GET['Categorie']))
 $canonical = "index.php";
 include("menu.php");
 
+if(!isset($_GET['Categorie'])) {
+	$_GET['Categorie'] = '';
+}
+
 $Condition=($_GET['Categorie']=='');
 if($Condition=='')
 	$Condition='0';
