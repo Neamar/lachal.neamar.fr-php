@@ -67,7 +67,7 @@ function LinkRemover($Texte)
 	$Texte[1]=preg_replace('#(.*)\<a.+\>(.+)\<\/a\>#iU','$1$2$3',$Texte[1]);
 	return $Texte[1];
 }
-function Parseur(&$buffer)
+function Parseur($buffer)
 {//fonction lancée à la fin du script
 	global $Patterns,$UseMath,$titre,$description;
 
