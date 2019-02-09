@@ -1,7 +1,7 @@
 <?php
 function StripCarac($Texte)
-{	//Remplacer les caractères accentués.
-	return str_ireplace('ü','u',str_ireplace('ï','i',str_ireplace('ê','e',str_ireplace('è','e',str_ireplace('é','e',str_ireplace(' ','_',strtolower($Texte)))))));
+{	//Remplacer les caractÃ¨res accentuÃ©s.
+	return str_ireplace('Ã¼','u',str_ireplace('Ã¯','i',str_ireplace('Ãª','e',str_ireplace('Ã¨','e',str_ireplace('Ã©','e',str_ireplace(' ','_',strtolower($Texte)))))));
 }
 function Encode($Texte)
 {
@@ -16,7 +16,7 @@ function Encode($Texte)
 }
 
 include('./ConnectBDD.php');
-//Protéger les données
+//ProtÃ©ger les donnÃ©es
 $message='';
 
 $date = date('d/m/Y');
@@ -36,12 +36,12 @@ $date = date('d/m/Y');
 if(isset($_POST['Mot']))
 {
 	mysql_query('INSERT INTO Lachal_Citations VALUES (\'\',\'0\',\'' . $_POST['Mot'] . '\',\'' . $_POST['Lien'] . '\',\'' . $_POST['Definition'] . '\',\'' . $_POST['Synonyme'] . '\',\'' . $_POST['Exemple1'] . '\',\'' . $_POST['Exemple2'] . '\',CURDATE())') or die(mysql_error());
-	$message='Merci pour votre ajout. Il est visible dès maintenant et sera vérifié... quand j\'en aurais le temps.';
+	$message='Merci pour votre ajout. Il est visible dÃ¨s maintenant et sera vÃ©rifiÃ©... quand j\'en aurais le temps.';
 }
 if(isset($_POST['AjoutExemple']))
 {
 	mysql_query('UPDATE Lachal_Citations SET  Exemple2=\'' . $_POST['AExemple2'] . '\' WHERE Mot = \'' . $_POST['AjoutExemple'] . '\'') or die(mysql_error());
-	$message='Merci pour votre modification. Il est visible dès maintenant et sera vérifié...quand j\'en aurais le temps.';
+	$message='Merci pour votre modification. Il est visible dÃ¨s maintenant et sera vÃ©rifiÃ©...quand j\'en aurais le temps.';
 }
 header('Location:' . Encode($_POST['Mot']));
 ?>

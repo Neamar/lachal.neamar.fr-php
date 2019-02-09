@@ -3,10 +3,9 @@ define('USE_CACHE',true);
 //define('USE_CACHE',false);
 
 ini_set('memory_limit','32M');
-ini_set('default_charset', 'ISO-8859-1');
 
 
-//Gestion du cache mémoire.
+//Gestion du cache mÃ©moire.
 function Cache($buffer)
 {
 	$Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['REQUEST_URI']),1);
@@ -17,7 +16,7 @@ function Cache($buffer)
 $Cache='/tmp/cache-' . substr(str_replace('/','-',$_SERVER['REQUEST_URI']),1);
 if(USE_CACHE && !file_exists($Cache))
 {
-	ignore_user_abort(true);//Éviter que l'utilisateur puisse interrompre la connexion, ce qui empêcherait l'enregistrement du cache.
+	ignore_user_abort(true);//Ã‰viter que l'utilisateur puisse interrompre la connexion, ce qui empÃªcherait l'enregistrement du cache.
 	ob_start('Cache');
 }
 elseif(USE_CACHE)
@@ -50,7 +49,7 @@ $NoGift = 1;
 $NoWelcomeCenter = 1;
 $GoogleSearch ="4506683949348156:a3wkew-rnji";
 $titreSVG=$titre;
-$titre="<TITRE>"; //Le titre sera remplacé par la tamporisation de sortie
+$titre="<TITRE>"; //Le titre sera remplacÃ© par la tamporisation de sortie
 $description="<DESC>";
 $EnlargeGroupConcat=true;
 include('./header.php');
@@ -68,7 +67,7 @@ function LinkRemover($Texte)
 	return $Texte[1];
 }
 function Parseur($buffer)
-{//fonction lancée à la fin du script
+{//fonction lancÃ©e Ã  la fin du script
 	global $Patterns,$UseMath,$titre,$description;
 
 	$compteur=0;
@@ -80,7 +79,7 @@ function Parseur($buffer)
 		$buffer = preg_replace('#\<math\>(.+)\<\/math\>#isU','\\($1\\)',$buffer);
 	}
 
-	//Et enfin, supprimer les liens à l'intérieur des balises <nolink> :
+	//Et enfin, supprimer les liens Ã  l'intÃ©rieur des balises <nolink> :
 	//$buffer=preg_replace('#\<nolink\>(.*)\<a.+\>(.+)\<\/a\>(.*)\<\/nolink\>#iU', '$1$2$3', $buffer);//Ne fonctionne pas si plusiseurs ancres dans une balise nolink.
 	$buffer=preg_replace_callback('#\<nolink\>(.+)\<\/nolink\>#iU',"LinkRemover",$buffer);
 	//Puis supprimer les nolink restants.
@@ -93,12 +92,12 @@ function Parseur($buffer)
 	$buffer=str_ireplace('(cf. Histoires)','(<a class="Ancre" href="//lachal.neamar.fr/Histoire.php">cf. Histoires</a>)',$buffer);
 	$buffer=str_ireplace('(cf. Correspondance)','(<a class="Ancre" href="//lachal.neamar.fr/Correspondance.php">cf. Correspondance</a>)',$buffer);
 
-	return $buffer . "\n<!--$compteur mots complexes parsés.-->";
+	return $buffer . "\n<!--$compteur mots complexes parsÃ©s.-->";
 }
 
 function StripCarac($Texte)
-{	//Remplacer les caractères accentués.
-	$Acc=array('ô','ü','î','ï','é','è','ê','à','â',' ');
+{	//Remplacer les caractÃ¨res accentuÃ©s.
+	$Acc=array('Ã´','Ã¼','Ã®','Ã¯','Ã©','Ã¨','Ãª','Ã ','Ã¢',' ');
 	$Rep=array('o','u','i','i','e','e','e','a','a','_');
 	error_log("Stripping " . $Texte . " yields " . str_ireplace($Acc,$Rep,strtolower($Texte)));
 	return str_ireplace($Acc,$Rep,strtolower($Texte));

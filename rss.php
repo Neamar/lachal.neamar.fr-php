@@ -1,4 +1,4 @@
-<?php echo '<?xml version="1.0" encoding="ISO-8859-1" ?>'; ?>
+<?php echo '<?xml version="1.0" ?>'; ?>
 <rss version="2.0">
 <channel>
 <title>Le petit Lachal non-illustre</title>
@@ -7,8 +7,8 @@
 <language>fr</language>
 <?php
 function StripCarac($Texte)
-{	//Remplacer les caractères accentués.
-$Acc=array('ô','ü','î','ï','é','è','ê','à',' ');
+{	//Remplacer les caractÃ¨res accentuÃ©s.
+$Acc=array('Ã´','Ã¼','Ã®','Ã¯','Ã©','Ã¨','Ãª','Ã ',' ');
 $Rep=array('o','u','i','i','e','e','e','a','_');
 return str_ireplace($Acc,$Rep,strtolower($Texte));
 }

@@ -16,7 +16,7 @@ if(!isset($_GET['ShowOnly']))
 		unset($UseMath);
 	}
 	else
-		$titre="Les histoires mathématiques de M Lachal";
+		$titre="Les histoires mathÃ©matiques de M Lachal";
 }
 else
 	$titre=stripslashes($_GET['Titre']);
@@ -53,8 +53,8 @@ if(!isset($_GET['ShowOnly']))
 	else
 	{
 	?>
-	<h1>Les histoires étiologiques</h1>
-	<p>Vous n'y comprenez rien aux maths ? Voilà qui devrait rendre le tout un peu moins abstrait... ou en tout cas, forcément plus drôle !</p>
+	<h1>Les histoires Ã©tiologiques</h1>
+	<p>Vous n'y comprenez rien aux maths ? VoilÃ  qui devrait rendre le tout un peu moins abstrait... ou en tout cas, forcÃ©ment plus drÃ´le !</p>
 	<?php
 	}
 }

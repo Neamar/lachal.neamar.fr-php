@@ -1,12 +1,12 @@
 <?php
-$titre='Le dictionnaire dédié aux mots de M. Lachal !';
+$titre='Le dictionnaire dÃ©diÃ© aux mots de M. Lachal !';
 if(isset($_GET['ShowOnlyLetter']))
 	$titre.='(mots commencant par ' . $_GET['ShowOnlyLetter'] . ')';
 
 if(isset($_GET['Categorie']))
 {
 	$_GET['Categorie']=str_replace('_',' ',$_GET['Categorie']);
-	$titre.='(Catégorie : ' . $_GET['Categorie'] . ')';
+	$titre.='(CatÃ©gorie : ' . $_GET['Categorie'] . ')';
 }
 
 $canonical = "index.php";
@@ -26,15 +26,15 @@ ORDER BY Mot
 ')or die(mysql_error());
 ?>
 
-<h1>Traduction Lachal/Français : <?php echo $nbMots; ?> mots</h1>
+<h1>Traduction Lachal/FranÃ§ais : <?php echo $nbMots; ?> mots</h1>
 <?php
 if($_GET['Categorie']=="Rhetorique")
-	$_GET['Categorie']="Rhétorique";
+	$_GET['Categorie']="RhÃ©torique";
 
 if(isset($_GET['Categorie']))
-	echo '<h2>Catégorie : ' . $_GET['Categorie'] . '</h2>';
+	echo '<h2>CatÃ©gorie : ' . $_GET['Categorie'] . '</h2>';
 ?>
-<p>La définition jointe est incomplète.<br />
+<p>La dÃ©finition jointe est incomplÃ¨te.<br />
 Cliquez sur le mot pour ouvrir une nouvelle page affichant plus d'informations et des exemples.</p>
 <?php
 $couleurs=array("bleu","blanc");
@@ -44,7 +44,7 @@ while($CurrentWord=mysql_fetch_assoc($Liste))
 {
 	if(StripCarac(strtolower($CurrentWord['Mot']{0}))!=strtolower($PremiereLettre))
 	{
-		if($PremiereLettre!=':') //Ne pas fermer la balise la première fois
+		if($PremiereLettre!=':') //Ne pas fermer la balise la premiÃ¨re fois
 			echo '</dl>' . "\n";
 		$PremiereLettre=StripCarac($CurrentWord['Mot']{0});
 		echo '<h3 class="Lettre"><a href="' . $PremiereLettre . '">' . $PremiereLettre . '</a>' . '</h3>' . "\n" . '<dl>' . "\n";
@@ -53,7 +53,7 @@ while($CurrentWord=mysql_fetch_assoc($Liste))
 	Typo::setTexte($CurrentWord['Definition']);
 	echo '	<dt class="' . $couleurs[$i] . '"><a href="<nolink>' . Encode($CurrentWord['Mot']) . '</nolink>"><nolink>' . $CurrentWord['Mot'] . '</nolink></a>';
 	if($CurrentWord['Categories']!='')
-		echo "<em><nolink>Catégorie : " . $CurrentWord['Categories'] . '</nolink></em>';
+		echo "<em><nolink>CatÃ©gorie : " . $CurrentWord['Categories'] . '</nolink></em>';
 	echo '</dt>' . "\n";
 	echo '		<dd>' . Typo::parse() . '</dd>' . "\n\n\n";;
 }

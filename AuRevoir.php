@@ -1,6 +1,6 @@
 <?php
 $titre='Au revoir !';
-$_GET['ShowOnly']=1;//évite l'affichage des infos
+$_GET['ShowOnly']=1;//Ã©vite l'affichage des infos
 include('menu.php');
 ?>
 <h3>Sommaire</h3>
@@ -16,30 +16,30 @@ include('menu.php');
 if(isset($_GET['P-51']))
 {?>
 <h2 id="P-51">Promo 51 : Fin d'un semestre pas comme les autres...</h2>
-<p>Eh oui, tout a une fin... mais on doit avouer que l'on ne s'attendait pas à une telle apothéose ! À notre tour de vous remercier pour cela... et pour les autres, voilà de quoi vous rafraîchir la mémoire (une anamnèse !) : un aperçu de la dernière séance !</p>
+<p>Eh oui, tout a une fin... mais on doit avouer que l'on ne s'attendait pas Ã  une telle apothÃ©ose ! Ã€ notre tour de vous remercier pour cela... et pour les autres, voilÃ  de quoi vous rafraÃ®chir la mÃ©moire (une anamnÃ¨se !) : un aperÃ§u de la derniÃ¨re sÃ©ance !</p>
 <div style="font-size:5em; background-color:white; text-align:center; margin:auto;">
-<p><br /><br />FIN D'UNE ÈRE...<br />
-MERCI D'AVOIR JOUÉ AVEC NOUS !<br /><br /><br /><br />
-MERCI POUR VOTRE PARTICIPATION À CETTE MÉGA-PANTALONNADE UBUESQUE !<br /><br /><br /><br /><br /><br />
-BILLEVESÉES, RODOMONTADES, FADAISES, COQUECIGRUES, ET TUTTI QUANTI...<br /><br /><br /><br /><br /><br />
-UN GRAND MERCI À L'ARÉOPAGE DES THURIFÉRAIRES ET PANÉGYRISTES ASSOCIÉS !!!<br /><br /><br /><br /><br /><br />
-<img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_1.jpg" alt="<nolink>Thuriféraire</nolink> en chef !" /><br />
-THURIFÉRAIRE-EN-CHEF<br /><br /><br /><br />
+<p><br /><br />FIN D'UNE ÃˆRE...<br />
+MERCI D'AVOIR JOUÃ‰ AVEC NOUS !<br /><br /><br /><br />
+MERCI POUR VOTRE PARTICIPATION Ã€ CETTE MÃ‰GA-PANTALONNADE UBUESQUE !<br /><br /><br /><br /><br /><br />
+BILLEVESÃ‰ES, RODOMONTADES, FADAISES, COQUECIGRUES, ET TUTTI QUANTI...<br /><br /><br /><br /><br /><br />
+UN GRAND MERCI Ã€ L'ARÃ‰OPAGE DES THURIFÃ‰RAIRES ET PANÃ‰GYRISTES ASSOCIÃ‰S !!!<br /><br /><br /><br /><br /><br />
+<img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_1.jpg" alt="<nolink>ThurifÃ©raire</nolink> en chef !" /><br />
+THURIFÃ‰RAIRE-EN-CHEF<br /><br /><br /><br />
 <img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_2.jpg" alt="Premier membre du triumvirat d'assesseurs" />
 <img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_3.jpg" alt="Second membre du triumvirat d'assesseurs" />
-<img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_4.jpg" alt="Troisième membre du triumvirat d'assesseurs" /><br />
+<img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_4.jpg" alt="TroisiÃ¨me membre du triumvirat d'assesseurs" /><br />
 TRIUMVIRAT D'ASSESSEURS<br /><br /><br /><br /><br /><br />
 <img src="Pics/AuRevoir/<nolink>THURIFERAIRE</nolink>_5.jpg" alt="Catalyseur" /><br />
-RÉTHORICIEN DITHYRAMBIQUE AU RAMAGE ALAMBIQUÉ<br />
+RÃ‰THORICIEN DITHYRAMBIQUE AU RAMAGE ALAMBIQUÃ‰<br />
 <span style="font-size:0.5em;">CATALYSEUR D'UNE LOGOMACHIE INCOERCIBLE</span><br /><br /><br /><br /><br /><br />
-ET POUR FINIR, UN PEU DE MATHÉMATIQUES...<br />
+ET POUR FINIR, UN PEU DE MATHÃ‰MATIQUES...<br />
 (DES VRAIES CETTE FOIS...)<br /><br /><br /><br /><br /><br />
 <img src="Pics/AuRevoir/BROWNIEN.jpg" alt="Le mouvement brownien" /><br /><br /><br /><br /><br />
 <img src="Pics/AuRevoir/LACHALIEN.jpg" alt="Le mouvement lachalien" /><br /><br /><br /><br /><br />
-Théorème (Lachal, 2000)<br />
-Probabilité d'atteindre le niveau -a avant le niveau b :<br />
+ThÃ©orÃ¨me (Lachal, 2000)<br />
+ProbabilitÃ© d'atteindre le niveau -a avant le niveau b :<br />
 <img src="Pics/AuRevoir/MEGATHEOREME.jpg" alt="Le mouvement lachalien" /><br /><br /><br /><br /><br />
-AU REVOIR LANIÈRE C...<br />
+AU REVOIR LANIÃˆRE C...<br />
 <span style="font-size:0.5em;">Les auteurs : Toto, Titeuf, Diddle, Schtroumpfy et... Bibi</span>
 </p>
 </div>
@@ -61,80 +61,80 @@ elseif(isset($_GET['P-53']))
 {?>
 <h2 id="P-53">Promo 53</h2>
 <div style="font-size:5em; background-color:white; text-align:center; margin:auto; text-transform:uppercase">
-<p>Fin d'une ère...<br />
+<p>Fin d'une Ã¨re...<br />
 <br />
 <span style="font-size:.8em; text-transform:none;">(hiver 2009-2010)</span><br /><br /><br /><br /><br />
 
-Merci d'avoir joué avec nous !<br /><br /><br /><br /><br />
+Merci d'avoir jouÃ© avec nous !<br /><br /><br /><br /><br />
 
-merci pour votre participation à cette méga-pantomime de semnopithèque !<br /><br /><br /><br /><br />
+merci pour votre participation Ã  cette mÃ©ga-pantomime de semnopithÃ¨que !<br /><br /><br /><br /><br />
 
-remerciements particuliers à quelques thuriféraires...<br /><br /><br /><br /><br />
+remerciements particuliers Ã  quelques thurifÃ©raires...<br /><br /><br /><br /><br />
 
 assalama alaykoum !<br />
 <img src="Pics/AuRevoir/<nolink>Assalama</nolink>.jpg" alt="ASSALAMA ALAYKOUM !" /><br />
-« m'sieur, une question ! »<br /><br /><br /><br /><br />
+Â« m'sieur, une question ! Â»<br /><br /><br /><br /><br />
 
 <img src="Pics/AuRevoir/<nolink>Lachal</nolink>.png" alt="M. Lachal" /><br />
-« fini les questions ! »<br />
-maâ  ssalama...<br /><br /><br /><br /><br />
+Â« fini les questions ! Â»<br />
+maÃ¢  ssalama...<br /><br /><br /><br /><br />
 
 
-panégyriste à la verve désopilante<br />
+panÃ©gyriste Ã  la verve dÃ©sopilante<br />
 <img src="Pics/AuRevoir/<nolink>Panegyriste</nolink>.jpg" alt="" /><br />
-« ô grand maître ! vous avez raison ! »<br /><br /><br /><br /><br />
+Â« Ã´ grand maÃ®tre ! vous avez raison ! Â»<br /><br /><br /><br /><br />
 
 
-prolixité inexpugnable et...<br />
+prolixitÃ© inexpugnable et...<br />
 toujours un train de retard !<br /><br /><br /><br /><br />
 
 
-après la méga-teuf du jeudi soir à la k'fêt...<br />
+aprÃ¨s la mÃ©ga-teuf du jeudi soir Ã  la k'fÃªt...<br />
 (avec les meufs...)<br /><br /><br /><br /><br />
 
 <img src="Pics/AuRevoir/<nolink>Dormeur</nolink>.jpg" alt="" /><br />
 dormeur du vendredi matin...<br /><br /><br /><br /><br />
 
 <img src="Pics/AuRevoir/<nolink>Gynecee</nolink>.png" alt="" /><br />
-le gynécée est plein !<br /><br /><br /><br /><br />
+le gynÃ©cÃ©e est plein !<br /><br /><br /><br /><br />
 
 <img src="Pics/AuRevoir/<nolink>Alacrite</nolink>.jpg" alt="" />
 <img src="Pics/AuRevoir/<nolink>Alacrite</nolink>_2.jpg" alt="" /><br />
-alacrité irrépressible, pétulance incoercible, idiosyncrasie primesautière...<br />
+alacritÃ© irrÃ©pressible, pÃ©tulance incoercible, idiosyncrasie primesautiÃ¨re...<br />
 <span style="font-size:.8em; text-transform:none;">(et tutti quanti)</span><br /><br /><br /><br /><br />
 
 
-petite joute mathématique :<br />
+petite joute mathÃ©matique :<br />
 <img src="Pics/AuRevoir/<nolink>Joute</nolink>.jpg" alt="" /><br />
-« toutes les fonctions qui s'écrivent sont continues ? »<br /><br /><br /><br /><br />
+Â« toutes les fonctions qui s'Ã©crivent sont continues ? Â»<br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Lachal</nolink>.png" alt="M. Lachal" /><br />
-« AH QUE NON !!!  »<br /><br /><br /><br /><br />
+Â« AH QUE NON !!!  Â»<br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Joute</nolink>.jpg" alt="" /><br />
-« oui, mais, à l'insa, toutes les fonctions sont continues ?! »<br /><br /><br /><br /><br />
+Â« oui, mais, Ã  l'insa, toutes les fonctions sont continues ?! Â»<br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Lachal</nolink>.png" alt="M. Lachal" /><br />
-« AH QUE (...) !!! »<br />
+Â« AH QUE (...) !!! Â»<br />
 <span style="font-size:.8em; text-transform:none;">(la vie de ma ..., il me cherche ?!)</span><br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>UneFi</nolink>.jpg" alt="" /><br />
 <img src="Pics/AuRevoir/<nolink>1Inf</nolink>.jpg" alt="1^infini" /><br />
-« c'est une fi ! »<br /><br /><br /><br /><br />
+Â« c'est une fi ! Â»<br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Lachal</nolink>.png" alt="M. Lachal" /><br />
-« une fi ? une fifi ? quézaco ??? »<br />
+Â« une fi ? une fifi ? quÃ©zaco ??? Â»<br />
 <span style="font-size:.8em; text-transform:none;">(Ah ! Une effi !!!)</span><br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Pissenlit</nolink>.jpg" alt="" /><br />
 cueilleur de pissenlits<br />
-<span style="font-size:.8em; text-transform:none;">(pâmoison extatique au tableau)</span><br /><br /><br /><br /><br />
+<span style="font-size:.8em; text-transform:none;">(pÃ¢moison extatique au tableau)</span><br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Craie</nolink>_1.jpg" alt="T'en veux ???" />
@@ -143,35 +143,35 @@ t'en veux ???<br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>Deserteur</nolink>.jpg" alt="" /><br />
-lolo matamore musagète...<br />
-<span style="font-size:.8em; text-transform:none;">(déserteur d'amphi par intermittence...)</span><br /><br /><br /><br /><br />
+lolo matamore musagÃ¨te...<br />
+<span style="font-size:.8em; text-transform:none;">(dÃ©serteur d'amphi par intermittence...)</span><br /><br /><br /><br /><br />
 
 
 <img src="Pics/AuRevoir/<nolink>BenHur</nolink>_1.jpg" alt="Ben-hur" />
 <img src="Pics/AuRevoir/<nolink>BenHur</nolink>_2.jpg" alt="Ben-hur" /><br />
 ben-hur :<br />
-bouffées de chaleur à donf !<br /><br /><br /><br /><br />
+bouffÃ©es de chaleur Ã  donf !<br /><br /><br /><br /><br />
 
 
-ailleurs, là où :<br />
-tout n'est que luxe, calme, et volupté<br /><br /><br /><br /><br />
+ailleurs, lÃ  oÃ¹ :<br />
+tout n'est que luxe, calme, et voluptÃ©<br /><br /><br /><br /><br />
 
 
 ici :<br />
-tout ne fut que trivialité, bestialité, et bourrinité...<br /><br /><br /><br /><br />
+tout ne fut que trivialitÃ©, bestialitÃ©, et bourrinitÃ©...<br /><br /><br /><br /><br />
 
 
-et pour finir, un peu de mathématiques...<br />
+et pour finir, un peu de mathÃ©matiques...<br />
 (les miennes...)<br /><br /><br /><br /><br /><br />
 <img src="Pics/AuRevoir/BROWNIEN.jpg" alt="Le mouvement brownien" /><br /><br /><br /><br /><br />
 <img src="Pics/AuRevoir/LACHALIEN.jpg" alt="Le mouvement lachalien" /><br /><br /><br /><br /><br />
-Théorème (Lachal, 2000)<br />
-Probabilité d'atteindre le niveau <span style="text-transform:none;">a</span> avant le niveau <span style="text-transform:none;">b</span> :<br />
+ThÃ©orÃ¨me (Lachal, 2000)<br />
+ProbabilitÃ© d'atteindre le niveau <span style="text-transform:none;">a</span> avant le niveau <span style="text-transform:none;">b</span> :<br />
 <img src="Pics/AuRevoir/MEGATHEOREME_2.jpg" alt="Le mouvement lachalien" /><br />
-(trivialité apodictique ou paralogisme assertorique à tendance captieuse ?)<br /><br /><br /><br /><br />
+(trivialitÃ© apodictique ou paralogisme assertorique Ã  tendance captieuse ?)<br /><br /><br /><br /><br />
 
 
-au revoir lanière d...<br /><br />
+au revoir laniÃ¨re d...<br /><br />
 <span style="font-size:.8em; text-transform:none;">Les auteurs : <em>Toto, <em>Titine</em>, <em>Mickey</em>, <em>Lorenzaccio</em> et... <em>Bibi</em><br />
 <a href="/">https://lachal.neamar.fr/</a></span>
 </p>
@@ -190,15 +190,15 @@ elseif(isset($_GET['P-54']))
 
 <h2 id="P-54">Promo 54</h2>
 <div style="font-size:5em; background-color:white; text-align:center; margin:auto; text-transform:uppercase">
-<p>Fin d'une ère...<br />
+<p>Fin d'une Ã¨re...<br />
 <br />
 <span style="font-size:.8em; text-transform:none;">(hiver 2009-2010)</span><br /><br /><br /><br /><br />
 
-Merci d'avoir joué avec nous !<br /><br /><br /><br /><br />
+Merci d'avoir jouÃ© avec nous !<br /><br /><br /><br /><br />
 
-merci pour votre participation à cette méga-pantomime de semnopithèque !<br /><br /><br /><br /><br />
+merci pour votre participation Ã  cette mÃ©ga-pantomime de semnopithÃ¨que !<br /><br /><br /><br /><br />
 
-remerciements particuliers à quelques thuriféraires et sycophantes...<br /><br /><br /><br /><br />
+remerciements particuliers Ã  quelques thurifÃ©raires et sycophantes...<br /><br /><br /><br /><br />
 
 <a href="Ressources/au_revoir2011.pdf">Voir la suite</a>
 </div>
