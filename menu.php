@@ -99,7 +99,6 @@ function StripCarac($Texte)
 {	//Remplacer les caractères accentués.
 	$Acc=array('ô','ü','î','ï','é','è','ê','à','â',' ');
 	$Rep=array('o','u','i','i','e','e','e','a','a','_');
-	error_log("Stripping " . $Texte . " yields " . str_ireplace($Acc,$Rep,strtolower($Texte)));
 	return str_ireplace($Acc,$Rep,strtolower($Texte));
 }
 function Encode($Texte)
