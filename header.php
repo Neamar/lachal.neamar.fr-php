@@ -1,7 +1,6 @@
 <?php
 // Initialise composer
 require_once __DIR__ . '/vendor/autoload.php';
-@ini_set('default_charset', 'ISO-8859-1');
 
 if(!isset($titre))
 	$titre="Ressources de neamar.fr";
@@ -18,7 +17,6 @@ if(!isset($description))
 <head>
 	<title><?php echo $titre; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<meta name="owner" content="Neamar" />
 	<meta name="author" content="Neamar" />
 	<meta name="robots" content="all" />
@@ -98,7 +96,6 @@ if(!isset($description))
 	<form action="//www.google.fr/cse" id="cse-search-box">
 	<div>
 		<input type="hidden" name="cx" value="partner-pub-<?php echo $GoogleSearch; ?>" />
-		<input type="hidden" name="ie" value="ISO-8859-1" />
 		<input type="text" name="q" size="12" onmouseover="this.size=25;" onmouseout="this.size=12;"/>
 		<input type="submit" name="sa" value="Rechercher" />
 	</div>

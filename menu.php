@@ -3,7 +3,6 @@ define('USE_CACHE',true);
 //define('USE_CACHE',false);
 
 ini_set('memory_limit','32M');
-ini_set('default_charset', 'ISO-8859-1');
 
 
 //Gestion du cache mémoire.
