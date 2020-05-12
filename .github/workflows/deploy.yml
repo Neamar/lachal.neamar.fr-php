@@ -16,3 +16,4 @@ jobs:
             ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
             dokku-host: 'neamar.fr'
             app-name: 'lachal'
+            git-push-flags: '--force'
