@@ -12,7 +12,7 @@ M. Lachal est là pour vous aider ! Voici quelques formulations qui dévraient �
 <li><cite>Cher affidé non complètement stipendié</cite> : <br />Pour s'adresser à un ancien compagnon d'armée avec lequel on a fait les 36 coups...</li>
 <li><cite>Cher affidé</cite> :<br />Simple et sans subtilité, mais plus enthousiaste qu'un vague "Ouéch mon pote"...</li>
 <li><cite>Cher affidé non obsolète</cite> :<br />À un ancien ami avec qui on regrette d'avoir perdu le contact, ou à un ancien ami à qui l'on compte demander un service !</li>
-<li><cite>Cher affidé priviligié</cite> :<br />L'ajout de "privilégié" laisse présager une demande, un service.</li>
+<li><cite>Cher affidé privilégié</cite> :<br />L'ajout de "privilégié" laisse présager une demande, un service.</li>
 <li><cite>Cher scribe</cite> :<br />Dans la lignée du précédent : direct et clair ! Pour une lettre à un secrétaire...</li>
 <li><cite>Cher thuriféraire-en-chef</cite> :<br />À un collègue qui lèche les pompes du patron, à un fayot. À mettre en tête de sa lettre de démission si votre chef vous a viré pour faire plaisir au patron.</li>
 <li><cite>Cher parangon ostentatoire</cite> :<br />À une de vos idoles souvent présente dans les médias...</li>
