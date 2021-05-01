@@ -35,7 +35,7 @@ if(!isset($description))
 	});
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-	<script async defer data-domain="lachal.neamar.fr" src="https://t.neamar.fr/js/plausible.js"></script>
+	<script async defer data-domain="lachal.neamar.fr" src="https://t.neamar.fr/js/pls.js"></script>
 </head>
 
 <body>
