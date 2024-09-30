@@ -23,7 +23,7 @@ function Encode($Texte)
 	$Texte=str_replace(","," ",$Texte);
 	$Texte=str_replace(" ","_",$Texte);
 	$Texte=str_replace(".","-",$Texte);
-	$Texte=strtoupper($Texte{0}) . strtolower(substr($Texte,1));
+	$Texte=strtoupper($Texte[0]) . strtolower(substr($Texte,1));
 	return $Texte;
 }
 	include('./ConnectBDD.php');

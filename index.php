@@ -46,11 +46,11 @@ $i=0;
 $PremiereLettre=":";
 while($CurrentWord=mysql_fetch_assoc($Liste))
 {
-	if(StripCarac(strtolower($CurrentWord['Mot']{0}))!=strtolower($PremiereLettre))
+	if(StripCarac(strtolower($CurrentWord['Mot'][0]))!=strtolower($PremiereLettre))
 	{
 		if($PremiereLettre!=':') //Ne pas fermer la balise la première fois
 			echo '</dl>' . "\n";
-		$PremiereLettre=StripCarac($CurrentWord['Mot']{0});
+		$PremiereLettre=StripCarac($CurrentWord['Mot'][0]);
 		echo '<h3 class="Lettre"><a href="' . $PremiereLettre . '">' . $PremiereLettre . '</a>' . '</h3>' . "\n" . '<dl>' . "\n";
 	}
 	$i=($i+1)%2;
