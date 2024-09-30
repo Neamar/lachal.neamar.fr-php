@@ -1,7 +1,10 @@
 {
-    "require": {
-      "php": "~7.3.0",
-      "dshafik/php7-mysql-shim": "0.2.0",
-      "ext-mbstring": "*"
-    }
+  "name": "neamar/lachal",
+  "description": "a port from a very old project",
+  "license": "proprietary",
+  "require": {
+    "php": "~8.3.10",
+    "dshafik/php7-mysql-shim": "0.2.0",
+    "ext-mbstring": "*"
+  }
 }
