@@ -5,10 +5,10 @@ function Decode($Texte)
 	$Texte=str_replace("-",".",$Texte);
 	return $Texte;
 }
-if($_GET['ShowOnly']!=strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1)))
+if($_GET['ShowOnly']!=strtoupper($_GET['ShowOnly'][0]) . strtolower(substr($_GET['ShowOnly'],1)))
 {
 	//Bien formater les URL
-	header('Location:' . (strtoupper($_GET['ShowOnly']{0}) . strtolower(substr($_GET['ShowOnly'],1))),False,301);
+	header('Location:' . (strtoupper($_GET['ShowOnly'][0]) . strtolower(substr($_GET['ShowOnly'],1))),False,301);
 	exit();
 }
 $canonical = '<nolink>' . $_GET['ShowOnly'] . '</nolink>';

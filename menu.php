@@ -73,7 +73,6 @@ function Parseur($buffer)
 	$compteur=0;
  	if(strlen($buffer)<90000)
 		$buffer = preg_replace(array_keys($Patterns),array_values($Patterns),$buffer,-1,$compteur);
- 	unset($Patterns);
 
 	if(isset($UseMath) && $UseMath==true) {
 		$buffer = preg_replace('#\<math\>(.+)\<\/math\>#isU','\\($1\\)',$buffer);
