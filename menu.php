@@ -71,7 +71,7 @@ function Parseur($buffer)
 	global $Patterns,$UseMath,$titre,$description;
 
 	$compteur=0;
- 	if(strlen($buffer)<90000)
+ 	if(strlen($buffer)<90000 && $Patterns!=null)
 		$buffer = preg_replace(array_keys($Patterns),array_values($Patterns),$buffer,-1,$compteur);
 
 	if(isset($UseMath) && $UseMath==true) {
