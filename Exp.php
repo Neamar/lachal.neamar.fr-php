@@ -38,9 +38,6 @@ if(isset($_GET['Expressions']) && isset($_GET['Histoire']))
 if(isset($_GET['ShowOnly']))
 	$WhereClause .=' AND ID=\'' . $_GET['ShowOnly'] . '\'';
 
-echo('SELECT ID,Expression,Is_Story FROM Lachal_Expression WHERE ' . $WhereClause . ' ORDER BY ID');
-die();
-
 $expr=mysql_query('SELECT ID,Expression,Is_Story FROM Lachal_Expression WHERE ' . $WhereClause . ' ORDER BY ID') or die(mysql_error());
 mysql_close();
 
