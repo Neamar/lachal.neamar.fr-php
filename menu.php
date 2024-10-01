@@ -1,4 +1,4 @@
-<<?php
+<?php
 define('USE_CACHE',true);
 //define('USE_CACHE',false);
 
