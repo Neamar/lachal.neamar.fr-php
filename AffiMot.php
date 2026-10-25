@@ -22,7 +22,7 @@ include("menu.php");
 $CurrentWord=mysql_fetch_assoc(mysql_query('SELECT Mot,Definition,Synonyme,Lien, GROUP_CONCAT(Categorie SEPARATOR \' | \') AS Categorie,Exemple1,Exemple2
 FROM Lachal_Citations
 LEFT JOIN Lachal_Relations ON Parent=Lachal_Citations.ID
-WHERE Mot = "' . $_GET['ShowOnly'] . '"
+WHERE Mot = "' . mysql_real_escape_string($_GET['ShowOnly']) . '"
 GROUP BY Mot
 ORDER BY Mot
 '));
@@ -37,8 +37,8 @@ if($CurrentWord==array())
 	echo '<p>Le mot que vous recherchez est malheureusement introuvable.<br /><a href="index.php">Retour à la liste globale</a></p>';
 	echo '<h2>Mots similaires</h2>';
 	$Approx=mysql_query('SELECT Mot FROM Lachal_Citations
-WHERE Mot Like "' . $_GET['ShowOnly'] . '%"
-OR SOUNDEX(Mot) =  SOUNDEX(\'' . $_GET['ShowOnly'] . '\')
+WHERE Mot Like "' . mysql_real_escape_string($_GET['ShowOnly']) . '%"
+OR SOUNDEX(Mot) =  SOUNDEX(\'' . mysql_real_escape_string($_GET['ShowOnly']) . '\')
 ORDER BY Mot');
 	echo '<p>Peut être vouliez-vous l\'un des mots suivants :</p>';
 	echo '<ul>';

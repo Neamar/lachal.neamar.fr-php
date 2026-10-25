@@ -12,7 +12,7 @@ include('menu.php');?>
 <?php
 if(isset($_GET['ShowOnly']))
 {
-	$Defi=mysql_fetch_assoc(mysql_query('SELECT ID,Titre, Probleme, Solution FROM Lachal_Defis WHERE ID=' . $_GET['ShowOnly']));
+	$Defi=mysql_fetch_assoc(mysql_query('SELECT ID,Titre, Probleme, Solution FROM Lachal_Defis WHERE ID=' . (int) $_GET['ShowOnly']));
 
 	$titre=$Defi['Titre'];
 	?>

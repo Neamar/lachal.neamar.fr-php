@@ -22,12 +22,6 @@ else
 	$titre=stripslashes($_GET['Titre']);
 include('menu.php');
 
-if(isset($_POST['Expr']))
-{
-	$_POST['Expr'] = nl2br($_POST['Expr']);
-	mysql_query('INSERT INTO Lachal_Expression VALUES(\'\',\'' . $_POST['Expr'] . '\',\'0\',\'1\')') or die(mysql_error());
-}
-
 $WhereClause='Accepte=\'1\' ';
 if(isset($_GET['Histoire']))
 	$WhereClause .='AND Is_Story=\'1\' ';
@@ -36,7 +30,7 @@ if(isset($_GET['Expressions']))
 if(isset($_GET['Expressions']) && isset($_GET['Histoire']))
 	$WhereClause='Accepte=\'1\' ';
 if(isset($_GET['ShowOnly']))
-	$WhereClause .=' AND ID=\'' . $_GET['ShowOnly'] . '\'';
+	$WhereClause .=' AND ID=\'' . (int) $_GET['ShowOnly'] . '\'';
 
 $expr=mysql_query('SELECT ID,Expression,Is_Story FROM Lachal_Expression WHERE ' . $WhereClause . ' ORDER BY ID') or die(mysql_error());
 mysql_close();
