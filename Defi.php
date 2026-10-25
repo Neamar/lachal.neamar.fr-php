@@ -40,7 +40,7 @@ else
 	<p>Voici la liste des défis disponibles pour l'instant :</p>
 	<ul>
 	<?php
-	$Defis=mysql_query('SELECT ID,Titre FROM Lachal_Defis');
+	$Defis=mysql_query('SELECT ID,Titre FROM Lachal_Defis ORDER BY ID');
 	while($Defi=mysql_fetch_assoc($Defis))
 	{
 		echo '<li><a href="Defi-' . $Defi['ID'] . '-' . $Defi['Titre'] . '">' . $Defi['Titre'] . '</a></li>' . "\n";
